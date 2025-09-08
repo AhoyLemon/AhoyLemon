@@ -9,18 +9,15 @@
 
 ## GitHub Stats
 
-![Lemon's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahoylemon&i&show_icons=true&theme=radical&show=reviews,prs_merged&include_all_commits=true&hide=contribs)
+<img src="https://github-readme-stats.vercel.app/api?username=ahoylemon&i&show_icons=true&theme=radical&show=reviews,prs_merged&include_all_commits=true&hide=contribs&hide_border=true" alt="Lemon's GitHub stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahoylemon&hide=hack&hide_border=true&layout=compact&langs_count=10&theme=radical" alt="Top Languages"  />
 
-## Top Languages
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ahoylemon&hide=hack&hide_title=true&hide_border=true&layout=compact&langs_count=10&theme=radical)
-
-## Social & Community
 
 [![GitHub followers](https://img.shields.io/github/followers/ahoylemon?label=followers&style=for-the-badge)](https://github.com/ahoylemon?tab=followers)
 ![Profile Views](https://komarev.com/ghpvc/?username=ahoylemon&style=for-the-badge)
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-❤-ff69b4?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/ahoylemon)
 
+## Elsewhere
 [![website](https://img.shields.io/badge/website-ahoylemon.xyz-313131?style=for-the-badge&labelColor=e4e72c)](https://ahoylemon.xyz)
 [![Sessionize](https://img.shields.io/badge/-lemon-313131?style=for-the-badge&logo=sessionize&logoColor=fff&labelColor=009688)](https://sessionize.com/lemon)
 [![BlueSky](https://img.shields.io/badge/-ahoylemon.xyz-313131?style=for-the-badge&logo=bluesky&logoColor=fff&labelColor=1da1f2)](https://bsky.app/profile/ahoylemon.xyz)
