@@ -15,8 +15,8 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install PyGithub
-        run: pip install PyGithub
+      - name: Install PyGithub and PyYAML
+        run: pip install PyGithub PyYAML
 
       - name: Generate GitHub user stats YAML
         env:
