@@ -25,19 +25,25 @@ jobs:
         run: |
           python .github/scripts/github_stats.py
 
-      - name: Debug GH_PAT secret length
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-        run: |
-          echo "GH_PAT length: $(echo -n $GH_PAT | wc -c)"
 
-      - name: Commit and push github.yml
+      - name: Commit and push to PR branch
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git checkout -b github-stats-update-$(date +%s)
           git add data/github.yml
           git commit -m 'Update GitHub stats YAML' || echo "No changes to commit"
           git remote set-url origin https://$GH_PAT@github.com/AhoyLemon/AhoyLemon.git
-          git push origin HEAD:main
+          git push origin HEAD
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GH_PAT }}
+          commit-message: 'Update GitHub stats YAML'
+          branch: github-stats-update
+          title: 'Update GitHub stats YAML'
+          body: 'Automated update of GitHub stats YAML file.'
+          base: main
