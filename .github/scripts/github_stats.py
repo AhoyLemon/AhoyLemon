@@ -1,11 +1,11 @@
 import os
 import yaml
-from github import Github
+from github import Github, Auth
 
 USERNAME = os.environ.get("GITHUB_USERNAME")
 TOKEN = os.environ.get("GITHUB_TOKEN")
 
-g = Github(TOKEN)
+g = Github(auth=Auth.Token(TOKEN))
 user = g.get_user(USERNAME)
 
 # Gather stats
