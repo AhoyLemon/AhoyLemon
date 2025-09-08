@@ -1,16 +1,17 @@
-
-<a href="https://ahoylemon.xyz" target="_blank">
-  <picture>
-    <source srcset="img/header-on-dark.png" media="(prefers-color-scheme: dark)">
-    <img src="img/header-on-light.png" alt="Hi, my name is Lemon. I make websites." />
-  </picture>
-</a>
+<div style="aspect-ratio:800/150;max-width:880px;">
+  <a href="https://ahoylemon.xyz" target="_blank">
+    <picture>
+      <source srcset="img/header-on-dark.png" media="(prefers-color-scheme: dark)">
+      <img src="img/header-on-light.png" alt="Hi, my name is Lemon. I make websites." style="width:100%;height:auto;display:block;" />
+    </picture>
+  </a>
+</div>
 
 
 ## GitHub Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=ahoylemon&i&show_icons=true&theme=radical&show=reviews,prs_merged&include_all_commits=true&hide=contribs&hide_border=true" alt="Lemon's GitHub stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahoylemon&hide=hack&hide_border=true&layout=compact&langs_count=10&theme=radical" alt="Top Languages"  />
+![Lemon's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahoylemon&i&show_icons=true&theme=transparent&icon_color=e4e72c&show=reviews,prs_merged&include_all_commits=true&hide=contribs&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ahoylemon&hide=hack&hide_border=true&layout=compact&langs_count=10&theme=transparent)
 
 
 [![GitHub followers](https://img.shields.io/github/followers/ahoylemon?label=followers&style=for-the-badge)](https://github.com/ahoylemon?tab=followers)
