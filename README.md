@@ -9,8 +9,6 @@
 
 
 ## GitHub Stats
-
-
 [
 ![Lemon's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahoylemon&i&show_icons=true&theme=transparent&icon_color=e4e72c&show=reviews,prs_merged&include_all_commits=true&hide=contribs&hide_border=true)
 ](https://github.com/AhoyLemon?tab=repositories)
