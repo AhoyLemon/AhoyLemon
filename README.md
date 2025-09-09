@@ -11,8 +11,12 @@
 ## GitHub Stats
 
 
-<img src="https://github-readme-stats.vercel.app/api?username=ahoylemon&i&show_icons=true&theme=transparent&icon_color=e4e72c&show=reviews,prs_merged&include_all_commits=true&hide=contribs&hide_border=true" alt="Lemon's GitHub stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahoylemon&hide=hack&hide_border=true&layout=compact&langs_count=10&theme=transparent" alt="Top Languages" />
+[
+![Lemon's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahoylemon&i&show_icons=true&theme=transparent&icon_color=e4e72c&show=reviews,prs_merged&include_all_commits=true&hide=contribs&hide_border=true)
+](https://github.com/AhoyLemon?tab=repositories)
+[
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ahoylemon&hide=hack&hide_border=true&layout=compact&langs_count=10&theme=transparent)
+](https://github.com/AhoyLemon?tab=repositories)
 
 
 [![GitHub followers](https://img.shields.io/github/followers/ahoylemon?label=followers&style=for-the-badge)](https://github.com/ahoylemon?tab=followers)
