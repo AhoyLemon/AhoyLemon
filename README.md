@@ -23,7 +23,7 @@
 [![website](https://img.shields.io/badge/website-ahoylemon.xyz-313131?style=for-the-badge&labelColor=e4e72c)](https://ahoylemon.xyz)
 [![Sessionize](https://img.shields.io/badge/-lemon-313131?style=for-the-badge&logo=sessionize&logoColor=fff&labelColor=009688)](https://sessionize.com/lemon)
 [![BlueSky](https://img.shields.io/badge/-ahoylemon.xyz-313131?style=for-the-badge&logo=bluesky&logoColor=fff&labelColor=1da1f2)](https://bsky.app/profile/ahoylemon.xyz)
-[![Mastodon](https://img.shields.io/badge/-@ahoylemon-313131?style=for-the-badge&logo=mastodon&logoColor=fff&labelColor=6364ff)](https://hachyderm.io/@ahoylemon)
+[![Mastodon](https://img.shields.io/badge/-@ahoylemon-313131?style=for-the-badge&logo=mastodon&logoColor=fff&labelColor=6364ff)](https://mastodon.social/@ahoylemon)
 [![CodePen](https://img.shields.io/badge/-@ahoylemon-313131?style=for-the-badge&logo=codepen&logoColor=fff&labelColor=000000)](https://codepen.io/ahoylemon)
 
 
