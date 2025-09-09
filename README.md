@@ -10,8 +10,9 @@
 
 ## GitHub Stats
 
-![Lemon's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahoylemon&i&show_icons=true&theme=transparent&icon_color=e4e72c&show=reviews,prs_merged&include_all_commits=true&hide=contribs&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ahoylemon&hide=hack&hide_border=true&layout=compact&langs_count=10&theme=transparent)
+
+<img src="https://github-readme-stats.vercel.app/api?username=ahoylemon&i&show_icons=true&theme=transparent&icon_color=e4e72c&show=reviews,prs_merged&include_all_commits=true&hide=contribs&hide_border=true" alt="Lemon's GitHub stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahoylemon&hide=hack&hide_border=true&layout=compact&langs_count=10&theme=transparent" alt="Top Languages" />
 
 
 [![GitHub followers](https://img.shields.io/github/followers/ahoylemon?label=followers&style=for-the-badge)](https://github.com/ahoylemon?tab=followers)
@@ -43,23 +44,3 @@
 [![Matomo](https://img.shields.io/badge/-Matomo-313131?style=flat&logo=matomo&logoColor=fff&labelColor=3152a0)](https://matomo.org/)
 [![Google Analytics](https://img.shields.io/badge/-Google%20Analytics-313131?style=flat&logo=google-analytics&logoColor=fff&labelColor=ea4335)](https://analytics.google.com/)
 [![Storybook](https://img.shields.io/badge/-Storybook-313131?style=flat&logo=storybook&logoColor=fff&labelColor=ff4785)](https://storybook.js.org/)
-
-
-<!--
-Other user-wide badge ideas:
-- GitHub followers (already included)
-- Profile views (already included)
-- GitHub Sponsors (already included)
-- Website/Portfolio status (already included)
-- Dev.to profile badge (if you have a dev.to account)
-- Stack Overflow profile badge (reputation, badges, etc.)
-- Medium profile badge
-- Hashnode profile badge
-- Discord invite badge (if you run a community)
-- Buy Me a Coffee/Ko-fi sponsor badge
-- Email/contact badge
-- Mastodon/Fediverse badge
-- Polywork badge
-- Product Hunt badge
-- Custom badge for your tagline or brand
--->

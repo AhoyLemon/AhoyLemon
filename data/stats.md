@@ -1,0 +1,42 @@
+- Total public repositories
+- Total private repositories
+- Total public + private gists
+- Total followers
+- Total following
+- Date joined GitHub
+- Date of first public repo
+- Date of last public contribution
+- List of organizations you belong to
+- List of pinned repositories
+- List of all topics/tags used across your repos
+- Total stars received (across all repos)
+- Total forks (across all repos)
+- Total commits (across all repos)
+- Total issues opened (across all repos)
+- Total pull requests opened (across all repos)
+- Total issues closed (across all repos)
+- Total pull requests closed (across all repos)
+- Total releases published (across all repos)
+- Total repo watchers (aggregate)
+- Total repo subscribers (aggregate)
+- Most starred repository (name, stars)
+- Most forked repository (name, forks)
+- Most recently updated repository
+- Most recently created repository
+- Repo with the most issues
+- Repo with the most pull requests
+- Most used languages (by repo count)
+- Most contributed-to language (by commit count)
+- Language breakdown by bytes of code
+- List of all unique languages used
+- Number of repositories archived
+- Number of repositories with CI/CD enabled (by checking for workflows)
+- Number of open issues across all repos
+- Number of open PRs across all repos
+- Number of closed issues across all repos
+- Number of closed PRs across all repos
+- Number of commits, PRs, issues, reviews in the last year/month
+- Most active day of the week/time of day
+- Contribution streaks (longest, current)
+- Number of stars you’ve given to other repos
+- Number of followers gained in the last year/month
