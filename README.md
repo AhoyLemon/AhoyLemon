@@ -32,12 +32,14 @@
 ## Tech I Like
 
 [![Vite](https://img.shields.io/badge/-Vite-313131?style=flat&logo=vite&logoColor=fff&labelColor=646cff)](https://vitejs.dev/)
-[![Vue](https://img.shields.io/badge/-Vue-313131?style=flat&logo=vue.js&logoColor=fff&labelColor=42b883)](https://vuejs.org/) 
+[![Vue](https://img.shields.io/badge/-Vue-313131?style=flat&logo=vue.js&logoColor=fff&labelColor=42b883)](https://vuejs.org/)
+[![Pug](https://img.shields.io/badge/-Pug-313131?style=flat&logo=pug&logoColor=fff&labelColor=a86454)](https://pugjs.org/)
+[![Sass](https://img.shields.io/badge/-Sass-313131?style=flat&logo=sass&logoColor=fff&labelColor=cc6699)](https://sass-lang.com/)
 [![React](https://img.shields.io/badge/-React-313131?style=flat&logo=react&logoColor=fff&labelColor=61dafb)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/-TypeScript-313131?style=flat&logo=typescript&logoColor=fff&labelColor=3178c6)](https://www.typescriptlang.org/)
 [![Svelte](https://img.shields.io/badge/-Svelte-313131?style=flat&logo=svelte&logoColor=fff&labelColor=ff3e00)](https://svelte.dev/)
 [![PHP](https://img.shields.io/badge/-PHP-313131?style=flat&logo=php&logoColor=fff&labelColor=777bb4)](https://www.php.net/)
-[![.NET](https://img.shields.io/badge/-.NET-313131?style=flat&logo=dotnet&logoColor=fff&labelColor=512bd4)](https://dotnet.microsoft.com/) [![Sass](https://img.shields.io/badge/-Sass-313131?style=flat&logo=sass&logoColor=fff&labelColor=cc6699)](https://sass-lang.com/)
+[![.NET](https://img.shields.io/badge/-.NET-313131?style=flat&logo=dotnet&logoColor=fff&labelColor=512bd4)](https://dotnet.microsoft.com/) 
 [![Craft CMS](https://img.shields.io/badge/-Craft-313131?style=flat&logo=craftcms&logoColor=fff&labelColor=e5422b)](https://craftcms.com/)
 [![Kirby](https://img.shields.io/badge/-Kirby-313131?style=flat&logo=kirby&logoColor=fff&labelColor=ff0100)](https://getkirby.com/)
 [![Jekyll](https://img.shields.io/badge/-Jekyll-313131?style=flat&logo=jekyll&logoColor=fff&labelColor=cc0000)](https://jekyllrb.com/)
