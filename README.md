@@ -9,13 +9,12 @@
 
 
 ## GitHub Stats
-[
-![Lemon's GitHub stats](https://github-readme-stats.vercel.app/api?username=ahoylemon&i&show_icons=true&theme=transparent&icon_color=e4e72c&show=reviews,prs_merged&include_all_commits=true&hide=contribs&hide_border=true)
-](https://github.com/AhoyLemon?tab=repositories)
-[
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ahoylemon&hide=hack&hide_border=true&layout=compact&langs_count=10&theme=transparent)
-](https://github.com/AhoyLemon?tab=repositories)
 
+<!-- GitHub Streak -->
+![](https://streak-stats.demolab.com/?user=ahoylemon&theme=radical&hide_border=true)
+
+<!-- Metrics Embed v3.34.0 :  -->
+![Metrics](https://metrics.lecoq.io/AhoyLemon?template=classic&base.hireable=true&base.community=0&base.repositories=0&languages=1&isocalendar=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=true&base.skip=false&isocalendar=false&isocalendar.duration=half-year&languages=false&languages.limit=12&languages.threshold=0%25&languages.other=false&languages.colors=github&languages.sections=most-used&languages.indepth=false&languages.analysis.timeout=15&languages.analysis.timeout.repositories=7.5&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&config.timezone=America%2FChicago&config.display=columns)
 
 [![GitHub followers](https://img.shields.io/github/followers/ahoylemon?label=followers&style=for-the-badge)](https://github.com/ahoylemon?tab=followers)
 ![Profile Views](https://komarev.com/ghpvc/?username=ahoylemon&style=for-the-badge)
@@ -23,8 +22,8 @@
 
 ## Elsewhere
 [![website](https://img.shields.io/badge/website-ahoylemon.xyz-313131?style=for-the-badge&labelColor=e4e72c)](https://ahoylemon.xyz)
-[![Sessionize](https://img.shields.io/badge/-lemon-313131?style=for-the-badge&logo=sessionize&logoColor=fff&labelColor=009688)](https://sessionize.com/lemon)
-[![BlueSky](https://img.shields.io/badge/-ahoylemon.xyz-313131?style=for-the-badge&logo=bluesky&logoColor=fff&labelColor=1da1f2)](https://bsky.app/profile/ahoylemon.xyz)
+[![Sessionize](https://img.shields.io/badge/-@lemon-313131?style=for-the-badge&logo=sessionize&logoColor=fff&labelColor=009688)](https://sessionize.com/lemon)
+[![BlueSky](https://img.shields.io/badge/-@ahoylemon.xyz-313131?style=for-the-badge&logo=bluesky&logoColor=fff&labelColor=1da1f2)](https://bsky.app/profile/ahoylemon.xyz)
 [![Mastodon](https://img.shields.io/badge/-@ahoylemon-313131?style=for-the-badge&logo=mastodon&logoColor=fff&labelColor=6364ff)](https://mastodon.social/@ahoylemon)
 [![CodePen](https://img.shields.io/badge/-@ahoylemon-313131?style=for-the-badge&logo=codepen&logoColor=fff&labelColor=000000)](https://codepen.io/ahoylemon)
 
@@ -35,7 +34,7 @@
 [![Vue](https://img.shields.io/badge/-Vue-313131?style=flat&logo=vue.js&logoColor=fff&labelColor=42b883)](https://vuejs.org/)
 [![Pug](https://img.shields.io/badge/-Pug-313131?style=flat&logo=pug&logoColor=fff&labelColor=a86454)](https://pugjs.org/)
 [![Sass](https://img.shields.io/badge/-Sass-313131?style=flat&logo=sass&logoColor=fff&labelColor=cc6699)](https://sass-lang.com/)
-[![React](https://img.shields.io/badge/-React-313131?style=flat&logo=react&logoColor=fff&labelColor=61dafb)](https://react.dev/)
+<!-- [![React](https://img.shields.io/badge/-React-313131?style=flat&logo=react&logoColor=fff&labelColor=61dafb)](https://react.dev/) -->
 [![TypeScript](https://img.shields.io/badge/-TypeScript-313131?style=flat&logo=typescript&logoColor=fff&labelColor=3178c6)](https://www.typescriptlang.org/)
 [![Svelte](https://img.shields.io/badge/-Svelte-313131?style=flat&logo=svelte&logoColor=fff&labelColor=ff3e00)](https://svelte.dev/)
 [![PHP](https://img.shields.io/badge/-PHP-313131?style=flat&logo=php&logoColor=fff&labelColor=777bb4)](https://www.php.net/)
