@@ -9,6 +9,7 @@
 
 
 ## GitHub Stats
+[![GitHub Streak](https://streak-stats.demolab.com?user=AhoyLemon&border_radius=4&mode=weekly&card_width=800&card_height=200)](https://git.io/streak-stats)
 
 [![GitHub followers](https://img.shields.io/github/followers/ahoylemon?label=followers&style=for-the-badge)](https://github.com/ahoylemon?tab=followers)
 ![Profile Views](https://komarev.com/ghpvc/?username=ahoylemon&style=for-the-badge)
