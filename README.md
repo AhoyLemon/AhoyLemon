@@ -7,9 +7,7 @@
   </a>
 </div>
 
-
-## GitHub Stats
-[![GitHub Streak](https://streak-stats.demolab.com?user=AhoyLemon&border_radius=4&mode=weekly&card_width=800&card_height=200)](https://git.io/streak-stats)
+<br />  
 
 [![GitHub followers](https://img.shields.io/github/followers/ahoylemon?label=followers&style=for-the-badge)](https://github.com/ahoylemon?tab=followers)
 ![Profile Views](https://komarev.com/ghpvc/?username=ahoylemon&style=for-the-badge)
@@ -42,3 +40,6 @@
 [![Matomo](https://img.shields.io/badge/-Matomo-313131?style=flat&logo=matomo&logoColor=fff&labelColor=3152a0)](https://matomo.org/)
 [![Google Analytics](https://img.shields.io/badge/-Google%20Analytics-313131?style=flat&logo=google-analytics&logoColor=fff&labelColor=ea4335)](https://analytics.google.com/)
 [![Storybook](https://img.shields.io/badge/-Storybook-313131?style=flat&logo=storybook&logoColor=fff&labelColor=ff4785)](https://storybook.js.org/)
+
+<!-- GITHUB-BADGES:START -->
+<!-- GITHUB-BADGES:END -->
