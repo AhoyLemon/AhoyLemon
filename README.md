@@ -30,23 +30,21 @@
 
 ## Tech I Like
 
-[![Vite](https://img.shields.io/badge/-Vite-313131?style=flat&logo=vite&logoColor=fff&labelColor=646cff)](https://vitejs.dev/)
-[![Vue](https://img.shields.io/badge/-Vue-313131?style=flat&logo=vue.js&logoColor=fff&labelColor=42b883)](https://vuejs.org/)
-[![Pug](https://img.shields.io/badge/-Pug-313131?style=flat&logo=pug&logoColor=fff&labelColor=a86454)](https://pugjs.org/)
-[![Sass](https://img.shields.io/badge/-Sass-313131?style=flat&logo=sass&logoColor=fff&labelColor=cc6699)](https://sass-lang.com/)
-[![React](https://img.shields.io/badge/-React-313131?style=flat&logo=react&logoColor=fff&labelColor=61dafb)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/-TypeScript-313131?style=flat&logo=typescript&logoColor=fff&labelColor=3178c6)](https://www.typescriptlang.org/)
-[![Svelte](https://img.shields.io/badge/-Svelte-313131?style=flat&logo=svelte&logoColor=fff&labelColor=ff3e00)](https://svelte.dev/)
-[![PHP](https://img.shields.io/badge/-PHP-313131?style=flat&logo=php&logoColor=fff&labelColor=777bb4)](https://www.php.net/)
-[![.NET](https://img.shields.io/badge/-.NET-313131?style=flat&logo=dotnet&logoColor=fff&labelColor=512bd4)](https://dotnet.microsoft.com/) 
-[![Craft CMS](https://img.shields.io/badge/-Craft-313131?style=flat&logo=craftcms&logoColor=fff&labelColor=e5422b)](https://craftcms.com/)
-[![Kirby](https://img.shields.io/badge/-Kirby-313131?style=flat&logo=kirby&logoColor=fff&labelColor=ff0100)](https://getkirby.com/)
-[![Jekyll](https://img.shields.io/badge/-Jekyll-313131?style=flat&logo=jekyll&logoColor=fff&labelColor=cc0000)](https://jekyllrb.com/)
-[![Firebase](https://img.shields.io/badge/-Firebase-313131?style=flat&logo=firebase&logoColor=fff&labelColor=ffca28)](https://firebase.google.com/)
-[![Figma](https://img.shields.io/badge/-Figma-313131?style=flat&logo=figma&logoColor=fff&labelColor=f24e1e)](https://figma.com/)
-[![Matomo](https://img.shields.io/badge/-Matomo-313131?style=flat&logo=matomo&logoColor=fff&labelColor=3152a0)](https://matomo.org/)
-[![Google Analytics](https://img.shields.io/badge/-Google%20Analytics-313131?style=flat&logo=google-analytics&logoColor=fff&labelColor=ea4335)](https://analytics.google.com/)
-[![Storybook](https://img.shields.io/badge/-Storybook-313131?style=flat&logo=storybook&logoColor=fff&labelColor=ff4785)](https://storybook.js.org/)
+[![Vite](https://img.shields.io/badge/Vite-000?style=for-the-badge&labelColor=212121&logo=vite&logoColor=646CFF&color=eee)](https://vitejs.dev/)
+[![Vue](https://img.shields.io/badge/Vue-000?style=for-the-badge&labelColor=212121&logo=vue.js&logoColor=42b883&color=eee)](https://vuejs.org/)
+[![Pug](https://img.shields.io/badge/Pug-000?style=for-the-badge&labelColor=212121&logo=pug&logoColor=a86454&color=eee)](https://pugjs.org/)
+[![Sass](https://img.shields.io/badge/Sass-000?style=for-the-badge&labelColor=212121&logo=sass&logoColor=cc6699&color=eee)](https://sass-lang.com/)
+[![React](https://img.shields.io/badge/React-000?style=for-the-badge&labelColor=212121&logo=react&logoColor=61dafb&color=eee)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-000?style=for-the-badge&labelColor=212121&logo=typescript&logoColor=3178c6&color=eee)](https://www.typescriptlang.org/)
+[![Svelte](https://img.shields.io/badge/Svelte-000?style=for-the-badge&labelColor=212121&logo=svelte&logoColor=ff3e00&color=eee)](https://svelte.dev/)
+[![PHP](https://img.shields.io/badge/PHP-000?style=for-the-badge&labelColor=212121&logo=php&logoColor=777bb4&color=eee)](https://www.php.net/)
+[![.NET](https://img.shields.io/badge/.NET-000?style=for-the-badge&labelColor=212121&logo=dotnet&logoColor=512bd4&color=eee)](https://dotnet.microsoft.com/)
+[![Craft](https://img.shields.io/badge/Craft-000?style=for-the-badge&labelColor=212121&logo=craftcms&logoColor=e5422b&color=eee)](https://craftcms.com/)
+[![Jekyll](https://img.shields.io/badge/Jekyll-000?style=for-the-badge&labelColor=212121&logo=jekyll&logoColor=cc0000&color=eee)](https://jekyllrb.com/)
+[![Firebase](https://img.shields.io/badge/Firebase-000?style=for-the-badge&labelColor=212121&logo=firebase&logoColor=ffca28&color=eee)](https://firebase.google.com/)
+[![Figma](https://img.shields.io/badge/Figma-000?style=for-the-badge&labelColor=212121&logo=figma&logoColor=F24E1E&color=eee)](https://figma.com/)
+[![Matomo](https://img.shields.io/badge/Matomo-000?style=for-the-badge&labelColor=212121&logo=matomo&logoColor=3152a0&color=eee)](https://matomo.org/)
+[![Storybook](https://img.shields.io/badge/Storybook-000?style=for-the-badge&labelColor=212121&logo=storybook&logoColor=ff4785&color=eee)](https://storybook.js.org/)
 
 <!-- GITHUB-BADGES:START -->
 <!-- GITHUB-BADGES:END -->
