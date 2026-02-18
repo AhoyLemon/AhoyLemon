@@ -9,13 +9,13 @@
 
 <br />  <br />
 
-![Repositories](https://raw.githubusercontent.com/AhoyLemon/xyz/main/stats/badges/repos.svg)
-![Commits](https://raw.githubusercontent.com/AhoyLemon/xyz/main/stats/badges/commits.svg)
-![Pull Requests](https://raw.githubusercontent.com/AhoyLemon/xyz/main/stats/badges/prs.svg)
-![Issues](https://raw.githubusercontent.com/AhoyLemon/xyz/main/stats/badges/issues.svg)
+[![Repositories](https://raw.githubusercontent.com/AhoyLemon/xyz/main/stats/badges/repos.svg)](https://github.com/AhoyLemon?tab=repositories)
+[![Commits](https://raw.githubusercontent.com/AhoyLemon/xyz/main/stats/badges/commits.svg)](https://github.com/search?q=author%3Aahoylemon&type=commits)
+[![Pull Requests](https://raw.githubusercontent.com/AhoyLemon/xyz/main/stats/badges/prs.svg)](https://github.com/search?q=is%3Apr+author%3Aahoylemon&type=issues)
+[![Issues](https://raw.githubusercontent.com/AhoyLemon/xyz/main/stats/badges/issues.svg)](https://github.com/search?q=is%3Aissue+author%3Aahoylemon&type=issues)
 
 [![GitHub followers](https://img.shields.io/github/followers/ahoylemon?label=followers&style=for-the-badge)](https://github.com/ahoylemon?tab=followers)
-![Profile Views](https://komarev.com/ghpvc/?username=ahoylemon&style=for-the-badge)
+[![Profile Views](https://komarev.com/ghpvc/?username=ahoylemon&style=for-the-badge)](https://github.com/antonkomarev/github-profile-views-counter)
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-❤-ff69b4?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/ahoylemon)
 
 
@@ -25,8 +25,6 @@
 [![Sessionize](https://img.shields.io/badge/-@lemon-212121?style=for-the-badge&logo=sessionize&logoColor=fff&labelColor=009688)](https://sessionize.com/lemon)
 [![BlueSky](https://img.shields.io/badge/-@ahoylemon.xyz-212121?style=for-the-badge&logo=bluesky&logoColor=fff&labelColor=1da1f2)](https://bsky.app/profile/ahoylemon.xyz)
 [![Mastodon](https://img.shields.io/badge/-@ahoylemon-212121?style=for-the-badge&logo=mastodon&logoColor=fff&labelColor=6364ff)](https://mastodon.social/@ahoylemon)
-<!--[![CodePen](https://img.shields.io/badge/-@ahoylemon-212121 ?style=for-the-badge&logo=codepen&logoColor=fff&labelColor=000000)](https://codepen.io/ahoylemon) -->
-
 
 ## Tech I Like
 
