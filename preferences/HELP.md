@@ -38,14 +38,18 @@ The second entry is what makes this global — VS Code expands `~/` to your home
 
 ```sh
 mkdir -p ~/.github/instructions
-ln -s ~/path/to/repo/preferences/personal.instructions.md ~/.github/instructions/personal.instructions.md
+for f in ~/path/to/repo/preferences/instructions/*.instructions.md; do
+  ln -sf "$f" ~/.github/instructions/"$(basename "$f")"
+done
 ```
 
 #### Linux Mint
 
 ```sh
 mkdir -p ~/.github/instructions
-ln -s ~/path/to/repo/preferences/personal.instructions.md ~/.github/instructions/personal.instructions.md
+for f in ~/path/to/repo/preferences/instructions/*.instructions.md; do
+  ln -sf "$f" ~/.github/instructions/"$(basename "$f")"
+done
 ```
 
 #### Windows 11
@@ -53,35 +57,42 @@ ln -s ~/path/to/repo/preferences/personal.instructions.md ~/.github/instructions
 Option A — Developer Mode (no admin required). Enable it via **Settings → System → For developers → Developer Mode**, then in PowerShell:
 
 ```powershell
-New-Item -ItemType Directory -Force "$HOME\.github\instructions"
-New-Item -ItemType SymbolicLink `
-  -Path "$HOME\.github\instructions\personal.instructions.md" `
-  -Target "C:\path\to\repo\preferences\personal.instructions.md"
+$src = "C:\path\to\repo\preferences\instructions"
+$dest = "$HOME\.github\instructions"
+New-Item -ItemType Directory -Force -Path $dest
+Get-ChildItem -Path $src -Filter *.instructions.md | ForEach-Object {
+  New-Item -ItemType SymbolicLink -Path (Join-Path $dest $_.Name) -Target $_.FullName -Force
+}
 ```
 
 Option B — Run PowerShell as Administrator and skip Developer Mode, using the same commands above.
 
 ---
 
-## Updating `personal.instructions.md`
+## Updating instruction files
 
-Because the home directory file is a symlink back to this repo, **just edit `personal.instructions.md` here**. Changes take effect immediately in VS Code with no additional steps on any platform.
+Because the home directory files are symlinks back to this repo, **just edit the files in `preferences/instructions/`**. Changes take effect immediately in VS Code with no additional steps on any platform.
 
-If for some reason you used a plain file copy instead of a symlink (e.g. you couldn't get symlinks working on Windows), you'll need to re-copy the file after each edit:
+If for some reason you used a plain file copy instead of a symlink (e.g. you couldn't get symlinks working on Windows), you'll need to re-copy the files after each edit:
 
 ### macOS
 ```zsh
-cp ~/Repos/AhoyLemon/preferences/personal.instructions.md ~/.github/instructions/personal.instructions.md
+mkdir -p ~/.github/instructions
+cp ~/Repos/AhoyLemon/preferences/instructions/*.instructions.md ~/.github/instructions/
 ```
 
 #### Linux Mint
 ```sh
-# ???
+mkdir -p ~/.github/instructions
+cp ~/Repos/AhoyLemon/preferences/instructions/*.instructions.md ~/.github/instructions/
 ```
 
 #### Windows 11 (PowerShell)
 ```powershell
-Copy-Item "C:\path\to\repo\preferences\personal.instructions.md" "$HOME\.github\instructions\personal.instructions.md"
+$src = "C:\path\to\repo\preferences\instructions"
+$dest = "$HOME\.github\instructions"
+New-Item -ItemType Directory -Force -Path $dest
+Copy-Item "$src\*.instructions.md" $dest -Force
 ```
 
 ---
