@@ -38,7 +38,7 @@ The second entry is what makes this global — VS Code expands `~/` to your home
 
 ```sh
 mkdir -p ~/.github/instructions
-for f in ~/path/to/repo/preferences/instructions/*.instructions.md; do
+for f in ~/Repos/AhoyLemon/preferences/instructions/*.instructions.md; do
   ln -sf "$f" ~/.github/instructions/"$(basename "$f")"
 done
 ```
@@ -47,7 +47,7 @@ done
 
 ```sh
 mkdir -p ~/.github/instructions
-for f in ~/path/to/repo/preferences/instructions/*.instructions.md; do
+for f in ~/Repos/AhoyLemon/preferences/instructions/*.instructions.md; do
   ln -sf "$f" ~/.github/instructions/"$(basename "$f")"
 done
 ```

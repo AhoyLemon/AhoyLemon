@@ -42,6 +42,10 @@ After completing a task, check whether any documentation should be updated — R
 
 Assume Prettier and ESLint are in use. Don't produce code that would fail either. Validate TypeScript — don't suppress type errors or reach for `any` as a shortcut.
 
+## File length
+
+Once a file exceeds 900 lines, flag it as a candidate for refactoring. This is a soft signal, not a hard rule — use judgement based on whether the file has grown in coherent or tangled ways.
+
 ## Git
 
 Commit messages should start with the relevant issue number when one exists, e.g. `#42 Fix scoring bug`. When a PR resolves an issue, the merge commit should begin with `This closes #XX`.
