@@ -57,7 +57,7 @@ done
 Option A — Developer Mode (no admin required). Enable it via **Settings → System → For developers → Developer Mode**, then in PowerShell:
 
 ```powershell
-$src = "C:\path\to\repo\preferences\instructions"
+$src = "I:\Sites\AhoyLemon\preferences\instructions"
 $dest = "$HOME\.github\instructions"
 New-Item -ItemType Directory -Force -Path $dest
 Get-ChildItem -Path $src -Filter *.instructions.md | ForEach-Object {
