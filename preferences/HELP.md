@@ -4,14 +4,22 @@ Personal development preferences for use with AI coding tools.
 
 ## Files
 
-- **`personal.instructions.md`** — Global Copilot instructions in VS Code's `.instructions.md` format
-- **`vscode-settings-snippet.json`** — VS Code settings snippet that registers the global instructions path
+- **`instructions/personal.instructions.md`** — Global Copilot instructions (VS Code)
+- **`instructions/ts.instructions.md`** — TypeScript preferences (VS Code)
+- **`instructions/css.instructions.md`** — SCSS/CSS preferences (VS Code)
+- **`instructions/vue.instructions.md`** — Vue preferences (VS Code)
+- **`claude/CLAUDE.md`** — Consolidated preferences for Claude Code (Claude CLI)
+- **`settings.json.snippet.md`** — VS Code settings snippet that registers the global instructions path
 
 ---
 
 ## How it works
 
-VS Code reads Copilot instructions from local files only — there's no URL or remote reference support. The approach here uses a **symlink**: `personal.instructions.md` lives in this repo as the single source of truth, and a symlink in your home directory points back to it. Editing the file in the repo takes effect immediately everywhere, with no copy step.
+This repo is the single source of truth for all AI coding preferences.
+
+**Copilot** reads instructions from local files. A symlink in `~/.github/instructions/` points back to the files here — editing the repo takes effect immediately, no copy step needed.
+
+**Claude Code** reads `~/.claude/CLAUDE.md` at startup. That file contains a single `@` import pointing back to `preferences/claude/CLAUDE.md` here — same principle, same result.
 
 ---
 
@@ -28,22 +36,11 @@ Open your user `settings.json` via `Cmd/Ctrl+Shift+P` → **"Open User Settings 
 }
 ```
 
-The second entry is what makes this global — VS Code expands `~/` to your home directory on all platforms.
-
 ---
 
-### Step 2 — Create the symlink
+### Step 2 — Copilot symlinks
 
-#### macOS
-
-```sh
-mkdir -p ~/.github/instructions
-for f in ~/Repos/AhoyLemon/preferences/instructions/*.instructions.md; do
-  ln -sf "$f" ~/.github/instructions/"$(basename "$f")"
-done
-```
-
-#### Linux Mint
+#### macOS / Linux
 
 ```sh
 mkdir -p ~/.github/instructions
@@ -54,7 +51,7 @@ done
 
 #### Windows 11
 
-Option A — Developer Mode (no admin required). Enable it via **Settings → System → For developers → Developer Mode**, then in PowerShell:
+Enable Developer Mode via **Settings → System → For developers → Developer Mode**, then in PowerShell:
 
 ```powershell
 $src = "I:\Sites\AhoyLemon\preferences\instructions"
@@ -65,46 +62,59 @@ Get-ChildItem -Path $src -Filter *.instructions.md | ForEach-Object {
 }
 ```
 
-Option B — Run PowerShell as Administrator and skip Developer Mode, using the same commands above.
+Alternatively, run PowerShell as Administrator and skip Developer Mode.
 
 ---
 
-## Updating instruction files
+### Step 3 — Claude Code
 
-Because the home directory files are symlinks back to this repo, **just edit the files in `preferences/instructions/`**. Changes take effect immediately in VS Code with no additional steps on any platform.
+#### macOS / Linux
 
-If for some reason you used a plain file copy instead of a symlink (e.g. you couldn't get symlinks working on Windows), you'll need to re-copy the files after each edit:
-
-### macOS
-```zsh
-mkdir -p ~/.github/instructions
-cp ~/Repos/AhoyLemon/preferences/instructions/*.instructions.md ~/.github/instructions/
-```
-
-#### Linux Mint
 ```sh
-mkdir -p ~/.github/instructions
-cp ~/Repos/AhoyLemon/preferences/instructions/*.instructions.md ~/.github/instructions/
+mkdir -p ~/.claude
+echo '{YourReposDirectory}/AhoyLemon/preferences/claude/CLAUDE.md' > ~/.claude/CLAUDE.md
 ```
 
 #### Windows 11 (PowerShell)
+
 ```powershell
-$src = "C:\path\to\repo\preferences\instructions"
-$dest = "$HOME\.github\instructions"
-New-Item -ItemType Directory -Force -Path $dest
-Copy-Item "$src\*.instructions.md" $dest -Force
+New-Item -ItemType Directory -Force -Path "$HOME\.claude"
+Set-Content "$HOME\.claude\CLAUDE.md" '{YourReposDirectory}\AhoyLemon\preferences\claude\CLAUDE.md'
 ```
+
+👆 fix the path for {YourReposDirectory} before copy/pasting
 
 ---
 
 ## Setting up a new machine
 
 1. Clone this repo
-2. Apply the VS Code settings snippet (Step 1 above)
-3. Run the symlink command for your platform (Step 2 above), pointing at the cloned repo path
+2. Add the VS Code settings snippet (Step 1)
+3. Run the Copilot symlink command for your platform (Step 2)
+4. Run the Claude Code setup command for your platform (Step 3)
 
 ---
 
-## Relationship to per-project instructions
+## Per-project instructions
 
 Individual projects may have a `.github/instructions/` folder with repo-specific conventions. These are additive — Copilot uses both. Project-level instructions take priority when they conflict with these global ones.
+
+---
+
+## Testing that preferences loaded
+
+### Copilot
+
+In VS Code, open Copilot Chat and ask:
+
+> I'm starting a fresh project. What package manager, build tool, and framework should I use?
+
+Expected answer: **bun**, **Vite**, **Vue**. If Copilot gives a generic answer (npm, webpack, React), the instructions aren't loading — confirm the `chat.instructionsFilesLocations` setting is saved and that the symlinks exist in `~/.github/instructions/`.
+
+### Claude Code
+
+Start a session and ask:
+
+> I need to add some interactivity to a page. Should I reach for a backend endpoint or handle it on the frontend?
+
+Expected answer: handle it on the frontend first — composable, computed, or smart component before any API endpoint. If Claude gives a neutral answer, check that `~/.claude/CLAUDE.md` contains the `@` import line and that the path points to the correct location on this machine.
