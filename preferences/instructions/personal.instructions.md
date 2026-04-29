@@ -8,7 +8,7 @@ More specific preferences for Vue, SCSS, and other areas live in their own instr
 
 ## Stack defaults
 
-TypeScript over JavaScript. Vite as the build tool. npm as the package manager. Prefer Vue if a framework is needed and none is already in use.
+TypeScript over JavaScript. Vite as the build tool. bun or npm as the package manager. Prefer Vue if a framework is needed and none is already in use.
 
 ## Architecture
 

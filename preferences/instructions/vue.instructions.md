@@ -20,9 +20,10 @@ Every block should declare its language explicitly:
 
 For complex components, Pug and SCSS can live in separate files co-located with the `.vue` file. Import them at the top of the script block:
 
-```ts
-import Template from './ComponentName.pug'
-import './ComponentName.scss'
+```vue
+<script setup lang="ts" src="./ComponentName.ts">
+<template lang="pug" src="./ComponentName.pug">
+<style lang="scss" src="./ComponentName.scss">
 ```
 
 Simple components can keep everything inline in the `.vue` file — use judgement based on file length and complexity.
