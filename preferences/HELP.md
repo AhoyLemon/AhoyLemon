@@ -99,7 +99,7 @@ echo '@/Users/darrin.mack/Repos/AhoyLemon/preferences/claude/CLAUDE.md' > ~/.cla
 
 ```powershell
 New-Item -ItemType Directory -Force -Path "$HOME\.claude"
-Set-Content "$HOME\.claude\CLAUDE.md" '@{YourReposDirectory}\AhoyLemon\preferences\claude\CLAUDE.md'
+Set-Content "$HOME\.claude\CLAUDE.md" 'I:\Sites\AhoyLemon\AhoyLemon\preferences\claude\CLAUDE.md'
 ```
 
 👆 fix the path for {YourReposDirectory} before copy/pasting (use an absolute path, e.g. `/Users/you/Repos`)
