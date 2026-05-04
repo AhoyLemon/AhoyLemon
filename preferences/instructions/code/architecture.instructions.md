@@ -2,9 +2,7 @@
 applyTo: "**"
 ---
 
-# General Development Preferences
-
-More specific preferences for Vue, SCSS, and other areas live in their own instructions files. This file covers general approach and workflow.
+# Architecture & Code Quality Preferences
 
 ## Stack defaults
 
@@ -30,14 +28,6 @@ Keep them lean. Don't introduce a new package when the problem can be solved cle
 
 When writing Node.js CLI or terminal utility scripts, use `chalk` for colored output and `cli-table3` for tabular data. Make the output legible and pleasant, not just functional.
 
-## Workflow — starting complex tasks
-
-Before beginning any multi-step task (adding a feature, refactoring, debugging something non-trivial), produce a numbered todo list of the steps involved. Keep it updated as work progresses. This is not optional for complex work.
-
-## Workflow — ending tasks
-
-After completing a task, check whether any documentation should be updated — README files, inline JSDoc/TSDoc, `copilot-instructions.md`, or anything in a `docs/` folder. If something changed that affects how a developer would understand or use the code, update the relevant docs before considering the task done.
-
 ## Code quality
 
 Assume Prettier and ESLint are in use. Don't produce code that would fail either. Validate TypeScript — don't suppress type errors or reach for `any` as a shortcut.
@@ -45,7 +35,3 @@ Assume Prettier and ESLint are in use. Don't produce code that would fail either
 ## File length
 
 Once a file exceeds 900 lines, flag it as a candidate for refactoring. This is a soft signal, not a hard rule — use judgement based on whether the file has grown in coherent or tangled ways.
-
-## Git
-
-Commit messages should start with the relevant issue number when one exists, e.g. `#42 Fix scoring bug`. When a PR resolves an issue, the merge commit should begin with `This closes #XX`.

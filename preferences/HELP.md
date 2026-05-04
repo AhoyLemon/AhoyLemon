@@ -4,11 +4,29 @@ Personal development preferences for use with AI coding tools.
 
 ## Files
 
-- **`instructions/personal.instructions.md`** — Global Copilot instructions (VS Code)
-- **`instructions/ts.instructions.md`** — TypeScript preferences (VS Code)
-- **`instructions/css.instructions.md`** — SCSS/CSS preferences (VS Code)
-- **`instructions/vue.instructions.md`** — Vue preferences (VS Code)
-- **`claude/CLAUDE.md`** — Consolidated preferences for Claude Code (Claude CLI)
+Everything lives under `instructions/`, organized into three subfolders. All files end in `*.instructions.md` so VS Code's Copilot picks them up automatically (it scans recursively).
+
+### `instructions/code/` — how to write code
+
+- **`architecture.instructions.md`** — stack defaults, architecture, dependencies, code quality, file length, UX philosophy
+- **`ts.instructions.md`** — TypeScript preferences
+- **`css.instructions.md`** — SCSS/CSS preferences
+- **`vue.instructions.md`** — Vue preferences
+- **`react.instructions.md`** — React preferences
+
+### `instructions/communication/` — how the AI should talk to me
+
+- **`plan.instructions.md`** — when and how the AI should push back on my ideas
+
+### `instructions/process/` — how work should flow
+
+- **`workflow.instructions.md`** — todo lists for complex tasks, doc updates at end of task
+- **`git.instructions.md`** — GitHub-as-source-of-truth, commit/PR conventions, code-comment vs PR-description split
+
+### Other
+
+- **`PROFILE.md`** — bio context about me (role, experience, communication style). Loaded by Claude via the index.
+- **`claude/CLAUDE.md`** — Index file Claude Code loads. `@`-imports `PROFILE.md` and everything in `instructions/`.
 - **`settings.json.snippet.md`** — VS Code settings snippet that registers the global instructions path
 
 ---
@@ -17,7 +35,7 @@ Personal development preferences for use with AI coding tools.
 
 This repo is the single source of truth for all AI coding preferences.
 
-**Copilot** reads instructions from local files. A symlink in `~/.github/instructions/` points back to the files here — editing the repo takes effect immediately, no copy step needed.
+**Copilot** reads instructions from local files. A single symlink at `~/.github/instructions` points back to `preferences/instructions/` here, and Copilot recursively scans the subfolders for `*.instructions.md` — editing the repo takes effect immediately, no copy step needed.
 
 **Claude Code** reads `~/.claude/CLAUDE.md` at startup. That file contains a single `@` import pointing back to `preferences/claude/CLAUDE.md` here — same principle, same result.
 
@@ -36,17 +54,20 @@ Open your user `settings.json` via `Cmd/Ctrl+Shift+P` → **"Open User Settings 
 }
 ```
 
+VS Code scans these folders recursively for `*.instructions.md`, so the subfolders inside `instructions/` are picked up without listing them individually.
+
 ---
 
-### Step 2 — Copilot symlinks
+### Step 2 — Copilot symlink
+
+A single folder-level symlink replaces the old per-file approach. New files added to the repo get picked up automatically.
 
 #### macOS / Linux
 
 ```sh
-mkdir -p ~/.github/instructions
-for f in ~/Repos/AhoyLemon/preferences/instructions/*.instructions.md; do
-  ln -sf "$f" ~/.github/instructions/"$(basename "$f")"
-done
+# If upgrading from a previous setup, first: rm -rf ~/.github/instructions
+mkdir -p ~/.github
+ln -s ~/Repos/AhoyLemon/preferences/instructions ~/.github/instructions
 ```
 
 #### Windows 11
@@ -54,12 +75,9 @@ done
 Enable Developer Mode via **Settings → System → For developers → Developer Mode**, then in PowerShell:
 
 ```powershell
-$src = "I:\Sites\AhoyLemon\preferences\instructions"
-$dest = "$HOME\.github\instructions"
-New-Item -ItemType Directory -Force -Path $dest
-Get-ChildItem -Path $src -Filter *.instructions.md | ForEach-Object {
-  New-Item -ItemType SymbolicLink -Path (Join-Path $dest $_.Name) -Target $_.FullName -Force
-}
+# If upgrading from a previous setup, first: Remove-Item -Recurse -Force "$HOME\.github\instructions"
+New-Item -ItemType Directory -Force -Path "$HOME\.github"
+New-Item -ItemType SymbolicLink -Path "$HOME\.github\instructions" -Target "I:\Sites\AhoyLemon\preferences\instructions" -Force
 ```
 
 Alternatively, run PowerShell as Administrator and skip Developer Mode.
@@ -68,21 +86,25 @@ Alternatively, run PowerShell as Administrator and skip Developer Mode.
 
 ### Step 3 — Claude Code
 
+`~/.claude/CLAUDE.md` needs to contain a single line that `@`-imports the repo's index file. The leading `@` is what makes Claude treat the line as an import directive (without it, Claude reads it as plain text and nothing gets loaded). The target is the repo's `claude/CLAUDE.md` — the file that itself `@`-imports the rest.
+
 #### macOS / Linux
 
 ```sh
 mkdir -p ~/.claude
-echo '{YourReposDirectory}/AhoyLemon/preferences/claude/CLAUDE.md' > ~/.claude/CLAUDE.md
+echo '@/Users/darrin.mack/Repos/AhoyLemon/preferences/claude/CLAUDE.md' > ~/.claude/CLAUDE.md
 ```
 
 #### Windows 11 (PowerShell)
 
 ```powershell
 New-Item -ItemType Directory -Force -Path "$HOME\.claude"
-Set-Content "$HOME\.claude\CLAUDE.md" '{YourReposDirectory}\AhoyLemon\preferences\claude\CLAUDE.md'
+Set-Content "$HOME\.claude\CLAUDE.md" '@{YourReposDirectory}\AhoyLemon\preferences\claude\CLAUDE.md'
 ```
 
-👆 fix the path for {YourReposDirectory} before copy/pasting
+👆 fix the path for {YourReposDirectory} before copy/pasting (use an absolute path, e.g. `/Users/you/Repos`)
+
+> ⚠️ This command **overwrites** `~/.claude/CLAUDE.md`. If you've added personal `@`-imports there (like `@~/.claude/profile.md`), back the file up first or re-add those lines after running.
 
 ---
 
@@ -109,7 +131,7 @@ In VS Code, open Copilot Chat and ask:
 
 > I'm starting a fresh project. What package manager, build tool, and framework should I use?
 
-Expected answer: **bun**, **Vite**, **Vue**. If Copilot gives a generic answer (npm, webpack, React), the instructions aren't loading — confirm the `chat.instructionsFilesLocations` setting is saved and that the symlinks exist in `~/.github/instructions/`.
+Expected answer: **bun**, **Vite**, **Vue**. If Copilot gives a generic answer (npm, webpack, React), the instructions aren't loading — confirm the `chat.instructionsFilesLocations` setting is saved and that `~/.github/instructions` points at `preferences/instructions/`.
 
 ### Claude Code
 

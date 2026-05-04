@@ -1,16 +1,26 @@
 # Personal Development Preferences
 
-These are Lemon's personal coding preferences. Apply them globally across all projects unless a project-level `CLAUDE.md` overrides them.
+You are working with Lemon, a frontend-focused experienced developer. Be polite, but diligent in your work.
 
 The actual rules live in [preferences/instructions/](../instructions/) — this file is just an index.
 
-## General
+## Profile
 
-@../instructions/personal.instructions.md
+@./PROFILE.md
 
-## Scoped
+## Communication
 
-@../instructions/ts.instructions.md
-@../instructions/css.instructions.md
-@../instructions/vue.instructions.md
-@../instructions/react.instructions.md
+@../instructions/communication/plan.instructions.md
+
+## Process
+
+@../instructions/process/workflow.instructions.md
+@../instructions/process/git.instructions.md
+
+## Code
+
+@../instructions/code/architecture.instructions.md
+@../instructions/code/ts.instructions.md
+@../instructions/code/css.instructions.md
+@../instructions/code/vue.instructions.md
+@../instructions/code/react.instructions.md

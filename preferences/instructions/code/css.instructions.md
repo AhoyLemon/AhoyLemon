@@ -1,5 +1,5 @@
 ---
-applyTo: "**/*.{scss,css,sass,vue}"
+applyTo: "**/*.css,**/*.scss"
 ---
 
 # SCSS / CSS Preferences
