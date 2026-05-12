@@ -25,6 +25,16 @@ Commit messages should start with the relevant issue number when one exists, e.g
 
 When a PR resolves an issue, the merge commit should begin with `This closes #XX`.
 
+If a PR resolves multiple issues, give each its own line — GitHub only auto-closes when the keyword is immediately followed by a single issue reference:
+
+```
+This closes #1
+This closes #2
+This closes #3
+```
+
+Do **not** combine them like `This closes #1, #2, #3` — GitHub will render the issue links but won't close them on merge.
+
 PR descriptions should explain WHY the change is being made, not just WHAT it does. The diff already shows what — the description is for context the diff can't carry: motivation, alternatives considered, links back to the issue.
 
 ## Code comments vs. PR descriptions
