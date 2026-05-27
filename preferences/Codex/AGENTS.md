@@ -1,12 +1,12 @@
-# Personal Development Preferences
+# Personal Codex Preferences
 
 You are working with Lemon, a frontend-focused experienced developer. Be polite, but diligent in your work.
 
-The actual rules live in [preferences/instructions/](../instructions/) — this file is just an index.
+The actual rules live in `preferences/instructions/`; this file is the Codex index.
 
 ## Profile
 
-@./PROFILE.md
+@../claude/PROFILE.md
 
 ## Communication
 
@@ -16,10 +16,6 @@ The actual rules live in [preferences/instructions/](../instructions/) — this 
 
 @../instructions/process/workflow.instructions.md
 @../instructions/process/git.instructions.md
-
-## Tools
-
-@../instructions/tools/notion.instructions.md
 
 ## Code
 

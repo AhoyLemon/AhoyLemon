@@ -21,6 +21,18 @@ Strongly prefer to work against an open GitHub issue. Almost every meaningful ch
 
 Commit messages should start with the relevant issue number when one exists, e.g. `#42 Fix scoring bug`.
 
+## Branch naming
+
+Use the format `type_NN-brief-description`, e.g. `issue_31-fix-scoring-bug`.
+
+- **Type** — `issue`, `feature`, `bug`, or `chore`
+- **Underscore** separates the type+number block from the description slug
+- **Hyphens** within the description
+
+When there's no associated issue, replace the issue number with a date (`YYYYMMDD`), e.g. `chore_20260527-npm-dependencies`. Prefer working against an issue when the work is non-trivial — see the section below on working against an established issue.
+
+Avoid forward slashes in branch names. Git treats slashes as a directory hierarchy, which prevents having a bare `issue` branch alongside `issue/*` branches and breaks some CI tooling and shell completions.
+
 ## Pull requests
 
 When a PR resolves an issue, the merge commit should begin with `This closes #XX`.
