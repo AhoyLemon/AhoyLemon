@@ -19,7 +19,7 @@ After completing a task, check whether any documentation should be updated. The 
 **Inside the project — update without asking:**
 - README files
 - Inline JSDoc/TSDoc
-- `copilot-instructions.md`
+- AGENTS.md and/or CLAUDE.md
 - Anything in a `docs/` folder
 - Any other project-scoped documentation
 

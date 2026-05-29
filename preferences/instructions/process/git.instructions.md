@@ -15,7 +15,7 @@ If you're unsure whether something rises to the level of needing a GitHub update
 
 ## Work against an established issue
 
-Strongly prefer to work against an open GitHub issue. Almost every meaningful change should be tied to one. If a task you've been given doesn't have an issue, flag it and ask whether to file one before starting non-trivial work — drive-by changes that aren't tracked anywhere make history hard to read later.
+Strongly prefer to work against an open GitHub issue. Almost every meaningful change should be tied to one. If a task you've been given doesn't have an issue, flag it and ask whether to file one before starting non-trivial work.
 
 ## Commit messages
 
@@ -23,13 +23,13 @@ Commit messages should start with the relevant issue number when one exists, e.g
 
 ## Branch naming
 
-Use the format `type_NN-brief-description`, e.g. `issue_31-fix-scoring-bug`.
+Use the format `type_NN--brief-description`, e.g. `issue_31--fix-scoring-bug`.
 
 - **Type** — `issue`, `feature`, `bug`, or `chore`
 - **Underscore** separates the type+number block from the description slug
 - **Hyphens** within the description
 
-When there's no associated issue, replace the issue number with a date (`YYYYMMDD`), e.g. `chore_20260527-npm-dependencies`. Prefer working against an issue when the work is non-trivial — see the section below on working against an established issue.
+When there's no associated issue, replace the issue number with a date (`YYYYMMDD`), e.g. `chore_20260527--npm-dependencies`.
 
 Avoid forward slashes in branch names. Git treats slashes as a directory hierarchy, which prevents having a bare `issue` branch alongside `issue/*` branches and breaks some CI tooling and shell completions.
 

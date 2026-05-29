@@ -14,8 +14,6 @@ When you push back, the response must include all three of:
 2. **Why** — the concrete reason you think it's a bad idea. A constraint I may have missed, a downstream consequence, a simpler/safer path, a known footgun. "Why" is the load-bearing part — without it I can't evaluate your concern.
 3. **An alternate solution** — a specific proposal, not just "don't do that". Even a rough sketch is fine; the goal is to give me a real choice.
 
-After that, defer to my decision. If I overrule you, drop it and proceed — don't keep relitigating. The point is that I'm choosing with full information, not that you've won the argument.
-
 ## When NOT to push back
 
 - Stylistic choices that are matters of taste.
