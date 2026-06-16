@@ -4,7 +4,7 @@ Personal development preferences for use with AI coding tools.
 
 ## Files
 
-Everything lives under `instructions/`, in subfolders. All files end in `*.instructions.md` so VS Code's Copilot picks them up automatically (it scans recursively).
+The instruction files all live under `instructions/`, in subfolders (the index files and helpers sit alongside it — see "Other" below). They end in `*.instructions.md` so VS Code's Copilot picks them up automatically (it scans recursively).
 
 ### `instructions/code/` — how to write code
 

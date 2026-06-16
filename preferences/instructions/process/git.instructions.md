@@ -51,3 +51,7 @@ PR descriptions should explain WHY, not just WHAT. The diff shows what; the desc
 Time-bound context ("added for the X flow", "fixes the bug from #123") belongs in the PR/issue, not in code comments — it rots into noise as the code moves on. Put it where it lives forever.
 
 Code comments should explain WHY when the why is non-obvious — a hidden constraint, a subtle invariant, a browser-bug workaround. If a well-named identifier already conveys intent, skip the comment.
+
+## Writing `#` on GitHub
+
+GitHub auto-links a bare `#` followed by a number to an issue or PR. In commit messages, PR descriptions, and comments, only write `#NN` when you actually mean that reference. For finding/item numbering or anything else, write it another way ("Finding 1", "item 3", "step 2") so it doesn't turn into an accidental link.

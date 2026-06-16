@@ -16,7 +16,7 @@ Split TypeScript into focused, single-purpose files rather than one large file (
 
 ## Types
 
-Give non-trivial objects their own named `interface` or `type` rather than declaring the shape inline at the point of use. Rough trigger: roughly 3+ properties probably wants a named type. It keeps call sites readable and the shape reusable.
+Give non-trivial objects their own named `interface` or `type` rather than declaring the shape inline at the point of use. Rough trigger: an object with roughly 3+ properties probably wants its own named type. It keeps call sites readable and the shape reusable.
 
 ## Logging
 
