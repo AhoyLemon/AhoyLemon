@@ -1,16 +1,17 @@
 ---
 applyTo: "**/*.css,**/*.scss"
+description: "SCSS/CSS conventions: variables, nesting, responsive, shame, file architecture"
 ---
 
 # SCSS / CSS Preferences
 
 ## Preprocessor
 
-Match the complexity of the project. Plain CSS is preferred in simple projects that don't already have a Node dependency — don't introduce a build step just for styles. Reach for SCSS when the project's complexity justifies it, or when it's already part of the stack. As complexity grows further, consider PostCSS and tree-shaking. Do not introduce a utility-class framework (e.g. Tailwind) unless it's already dominant in the project.
+Match the project's complexity. Plain CSS for simple projects with no existing Node dependency — don't add a build step just for styles. Reach for SCSS when complexity justifies it or it's already in the stack; as complexity grows, consider PostCSS and tree-shaking. Don't introduce a utility-class framework (e.g. Tailwind) unless it already dominates the project.
 
 ## Variables
 
-Prefer SCSS variables over bare CSS custom property references throughout the code. If a CSS custom property exists (e.g. `--color-primary`), assign it to a SCSS variable once near the top of the relevant file or in `abstracts/_variables.scss`, then use the variable everywhere:
+Prefer SCSS variables over bare CSS custom property references. If a custom property exists (e.g. `--color-primary`), assign it to a SCSS variable once — near the top of the file or in `abstracts/_variables.scss` — then use the variable everywhere:
 
 ```scss
 // Define once
@@ -20,41 +21,41 @@ $color-primary: var(--color-primary);
 color: $color-primary;
 ```
 
-Do not repeat `var(--color-name)` inline throughout the codebase.
+Don't repeat `var(--color-name)` inline throughout the codebase.
 
 ## Class naming
 
-Prefer readable, nested class selectors over enforced naming conventions like BEM. A selector like `.person-card .inside .bottom` is preferable to `.person-card-inside__bottom`. Clarity of intent matters more than keeping selector chains to a single class name. Nesting in SCSS should reflect the visual/structural hierarchy.
+Prefer readable, nested selectors over enforced conventions like BEM. `.person-card .inside .bottom` beats `.person-card-inside__bottom` — clarity of intent matters more than single-class chains, and nesting should reflect the visual/structural hierarchy.
 
-Avoid nesting deeper than 3 levels.
+Avoid nesting deeper than 3 levels where possible, but going deeper is acceptable when warranted.
 
 ## Responsive design
 
-Prefer container queries (`@container`) over media queries (`@media`) for component-level responsiveness. Use media queries only for layout-level or truly global breakpoints that can't be expressed as container queries.
+Prefer container queries (`@container`) over media queries for component-level responsiveness. Use media queries only for layout-level or truly global breakpoints that can't be expressed as container queries.
 
 ## Source maps
 
-Include source maps in local/development builds. Strip them in production builds.
+Include them in local/dev builds; strip them in production.
 
 ## Sizing & spacing
 
-`clamp()` is encouraged for fluid typography and spacing. Prefer it over fixed breakpoint-based size switches where it makes the intent clearer.
+`clamp()` is encouraged for fluid typography and spacing — prefer it over fixed breakpoint-based switches where it makes the intent clearer.
 
 ## Shame
 
-Any CSS rule that targets an ID (`#element`) or uses `!important` must be written in `_shame.scss` (or `todo/_shame.scss` in a structured project), not inline where it appears. These are considered overrides or hacks and should be isolated and visible as such.
+Any rule targeting an ID (`#element`) or using `!important` must live in `_shame.scss` (or `todo/_shame.scss` in a structured project), not inline where it applies. These are overrides/hacks and should be isolated and visible as such.
 
 ## Debug color
 
-`lime` (i.e. `color: lime` or `background: lime`) is a debug color. Never leave it in committed code. If you see it, flag it.
+`lime` (`color: lime` / `background: lime`) is a debug color — never leave it in committed code. If you see it, flag it.
 
 ## Interactive states
 
-Any interactable element — especially buttons, links, and form controls — must have both `:hover` and `:active` states defined. Don't style a button without them.
+Every interactable element — especially buttons, links, and form controls — must define both `:hover` and `:active`. Don't style a button without them.
 
 ## File architecture
 
-The main entry file (e.g. `site.scss`, `styles.scss`) should contain no actual CSS rules — only `@use` statements. Organize those imports in this order, omitting any sections that don't apply to the project:
+The entry file (e.g. `site.scss`) should contain no CSS rules — only `@use` statements, in this order (omit sections that don't apply):
 
 ```scss
 // Abstracts (output no CSS on their own)
@@ -85,4 +86,4 @@ The main entry file (e.g. `site.scss`, `styles.scss`) should contain no actual C
 @use 'todo/shame';
 ```
 
-Actual styles belong in the appropriate partial, not in the entry file.
+Actual styles belong in the appropriate partial, not the entry file.
