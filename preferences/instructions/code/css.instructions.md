@@ -1,5 +1,5 @@
 ---
-applyTo: "**/*.css,**/*.scss"
+applyTo: "**/*.css,**/*.scss,**/*.vue"
 description: "SCSS/CSS conventions: variables, nesting, responsive, shame, file architecture"
 ---
 

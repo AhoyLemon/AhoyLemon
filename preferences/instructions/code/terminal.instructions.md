@@ -1,5 +1,5 @@
 ---
-applyTo: "**/*.sh,**/*.zsh,**/*.mjs"
+applyTo: "**/*.sh,**/*.bash,**/*.zsh,**/*.mjs,**/*.cjs"
 description: "Conventions for bash, zsh, and Node CLI scripts"
 ---
 

@@ -1,5 +1,5 @@
 ---
-applyTo: "**/*.pug,**/*.html"
+applyTo: "**/*.pug,**/*.html,**/*.vue,**/*.svg"
 description: "Semantic HTML, Pug, and SVG conventions"
 ---
 

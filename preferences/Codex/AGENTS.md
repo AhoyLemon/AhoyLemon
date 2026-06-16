@@ -18,6 +18,10 @@ The actual rules live in `preferences/instructions/`; this file is the Codex ind
 @../instructions/process/git.instructions.md
 @../instructions/process/testing.instructions.md
 
+## Tools
+
+@../instructions/tools/notion.instructions.md
+
 ## Code
 
 @../instructions/code/architecture.instructions.md
