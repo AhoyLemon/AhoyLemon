@@ -1,22 +1,23 @@
 ---
-applyTo: "**/*.ts"
+applyTo: "**/*.ts,**/*.tsx,**/*.vue"
+description: "TypeScript file organisation, naming, and logging conventions"
 ---
 
 # TypeScript Preferences
 
 ## File organisation
 
-Split TypeScript into focused, single-purpose files rather than one large file. For example: `src/ts/_gameLogic.ts`, `src/ts/_computeds.ts`, `src/ts/_api.ts`. Each file should have a clear responsibility.
-
-Files intended primarily to be imported by others (not entry points) should be prefixed with an underscore, e.g. `_helpers.ts`, `_types.ts`.
+Split TypeScript into focused, single-purpose files rather than one large file (e.g. `src/ts/_gameLogic.ts`, `_computeds.ts`, `_api.ts`). Prefix files meant to be imported (not entry points) with an underscore: `_helpers.ts`, `_types.ts`.
 
 ## Naming conventions
 
-- **Types and interfaces** — PascalCase: `export interface MerchItem`, `export type CartEntry`
+- **Types and interfaces** — PascalCase: `export interface MerchItem`
 - **Functions** — camelCase: `export function calculateMerchPrice(item: MerchItem): number`
+
+## Types
+
+Give non-trivial objects their own named `interface` or `type` rather than declaring the shape inline at the point of use. Rough trigger: an object with roughly 3+ properties probably wants its own named type. It keeps call sites readable and the shape reusable.
 
 ## Logging
 
-`console.log` is for debugging only and should not appear in production code. Remove it before committing.
-
-`console.warn` is acceptable in production for unexpected but recoverable situations (caught errors, fallback paths, etc.).
+`console.log` is debugging-only — remove it before committing. `console.warn` is fine in production for unexpected-but-recoverable situations (caught errors, fallback paths).

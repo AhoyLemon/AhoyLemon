@@ -16,6 +16,7 @@ The actual rules live in [preferences/instructions/](../instructions/) — this 
 
 @../instructions/process/workflow.instructions.md
 @../instructions/process/git.instructions.md
+@../instructions/process/testing.instructions.md
 
 ## Tools
 
@@ -26,5 +27,6 @@ The actual rules live in [preferences/instructions/](../instructions/) — this 
 @../instructions/code/architecture.instructions.md
 @../instructions/code/ts.instructions.md
 @../instructions/code/css.instructions.md
+@../instructions/code/markup.instructions.md
 @../instructions/code/vue.instructions.md
-@../instructions/code/react.instructions.md
+@../instructions/code/terminal.instructions.md
