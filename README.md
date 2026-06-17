@@ -52,35 +52,35 @@
 
 **Daily drivers**
 
-[![Vue](https://img.shields.io/badge/Vue-000?style=flat-square&labelColor=212121&logo=vue.js&logoColor=42b883&color=fff)](https://vuejs.org/)
-[![Vite](https://img.shields.io/badge/Vite-000?style=flat-square&labelColor=212121&logo=vite&logoColor=646CFF&color=fff)](https://vitejs.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-000?style=flat-square&labelColor=212121&logo=typescript&logoColor=3178c6&color=fff)](https://www.typescriptlang.org/)
-[![Pug](https://img.shields.io/badge/Pug-000?style=flat-square&labelColor=212121&logo=pug&logoColor=a86454&color=fff)](https://pugjs.org/)
-[![Sass](https://img.shields.io/badge/Sass-000?style=flat-square&labelColor=212121&logo=sass&logoColor=cc6699&color=fff)](https://sass-lang.com/)
-[![Figma](https://img.shields.io/badge/Figma-000?style=flat-square&labelColor=212121&logo=figma&logoColor=F24E1E&color=fff)](https://figma.com/)
-[![Claude](https://img.shields.io/badge/Claude-000?style=flat-square&labelColor=212121&logo=claude&logoColor=D97757&color=fff)](https://claude.ai/)
-[![Storybook](https://img.shields.io/badge/Storybook-000?style=flat-square&labelColor=212121&logo=storybook&logoColor=ff4785&color=fff)](https://storybook.js.org/)
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=flat-square&labelColor=212121&logo=github&logoColor=fff&color=fff)](https://github.com/)
+[![Vue](https://img.shields.io/badge/Vue-000?style=flat-square&labelColor=212121&logo=vue.js&logoColor=42b883&color=ccc)](https://vuejs.org/)
+[![Vite](https://img.shields.io/badge/Vite-000?style=flat-square&labelColor=212121&logo=vite&logoColor=646CFF&color=ccc)](https://vitejs.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-000?style=flat-square&labelColor=212121&logo=typescript&logoColor=3178c6&color=ccc)](https://www.typescriptlang.org/)
+[![Pug](https://img.shields.io/badge/Pug-000?style=flat-square&labelColor=212121&logo=pug&logoColor=a86454&color=ccc)](https://pugjs.org/)
+[![Sass](https://img.shields.io/badge/Sass-000?style=flat-square&labelColor=212121&logo=sass&logoColor=cc6699&color=ccc)](https://sass-lang.com/)
+[![Figma](https://img.shields.io/badge/Figma-000?style=flat-square&labelColor=212121&logo=figma&logoColor=F24E1E&color=ccc)](https://figma.com/)
+[![Claude](https://img.shields.io/badge/Claude-000?style=flat-square&labelColor=212121&logo=claude&logoColor=D97757&color=ccc)](https://claude.ai/)
+[![Storybook](https://img.shields.io/badge/Storybook-000?style=flat-square&labelColor=212121&logo=storybook&logoColor=ff4785&color=ccc)](https://storybook.js.org/)
+[![GitHub](https://img.shields.io/badge/GitHub-000?style=flat-square&labelColor=212121&logo=github&logoColor=fff&color=ccc)](https://github.com/)
 
 **Friendly with**
 
-[![Svelte](https://img.shields.io/badge/Svelte-000?style=flat-square&labelColor=212121&logo=svelte&logoColor=ff3e00&color=fff)](https://svelte.dev/)
-[![React](https://img.shields.io/badge/React-000?style=flat-square&labelColor=212121&logo=react&logoColor=61dafb&color=fff)](https://react.dev/)
-[![PHP](https://img.shields.io/badge/PHP-000?style=flat-square&labelColor=212121&logo=php&logoColor=777bb4&color=fff)](https://www.php.net/)
-[![Firebase](https://img.shields.io/badge/Firebase-000?style=flat-square&labelColor=212121&logo=firebase&logoColor=ffca28&color=fff)](https://firebase.google.com/)
-[![Kirby](https://img.shields.io/badge/Kirby-000?style=flat-square&labelColor=212121&logo=kirby&logoColor=fff&color=fff)](https://getkirby.com/)
-[![Craft](https://img.shields.io/badge/Craft-000?style=flat-square&labelColor=212121&logo=craftcms&logoColor=e5422b&color=fff)](https://craftcms.com/)
-[![Jekyll](https://img.shields.io/badge/Jekyll-000?style=flat-square&labelColor=212121&logo=jekyll&logoColor=cc0000&color=fff)](https://jekyllrb.com/)
-[![Matomo](https://img.shields.io/badge/Matomo-000?style=flat-square&labelColor=212121&logo=matomo&logoColor=3152a0&color=fff)](https://matomo.org/)
-[![Nuxt](https://img.shields.io/badge/Nuxt-000?style=flat-square&labelColor=212121&logo=nuxt&logoColor=00DC82&color=fff)](https://nuxt.com/)
-[![Astro](https://img.shields.io/badge/Astro-000?style=flat-square&labelColor=212121&logo=astro&logoColor=BC52EE&color=fff)](https://astro.build/)
-[![Perplexity](https://img.shields.io/badge/Perplexity-000?style=flat-square&labelColor=212121&logo=perplexity&logoColor=1FB8CD&color=fff)](https://www.perplexity.ai/)
+[![Svelte](https://img.shields.io/badge/Svelte-000?style=flat-square&labelColor=212121&logo=svelte&logoColor=ff3e00&color=ccc)](https://svelte.dev/)
+[![React](https://img.shields.io/badge/React-000?style=flat-square&labelColor=212121&logo=react&logoColor=61dafb&color=ccc)](https://react.dev/)
+[![PHP](https://img.shields.io/badge/PHP-000?style=flat-square&labelColor=212121&logo=php&logoColor=777bb4&color=ccc)](https://www.php.net/)
+[![Firebase](https://img.shields.io/badge/Firebase-000?style=flat-square&labelColor=212121&logo=firebase&logoColor=ffca28&color=ccc)](https://firebase.google.com/)
+[![Kirby](https://img.shields.io/badge/Kirby-000?style=flat-square&labelColor=212121&logo=kirby&logoColor=fff&color=ccc)](https://getkirby.com/)
+[![Craft](https://img.shields.io/badge/Craft-000?style=flat-square&labelColor=212121&logo=craftcms&logoColor=e5422b&color=ccc)](https://craftcms.com/)
+[![Jekyll](https://img.shields.io/badge/Jekyll-000?style=flat-square&labelColor=212121&logo=jekyll&logoColor=cc0000&color=ccc)](https://jekyllrb.com/)
+[![Matomo](https://img.shields.io/badge/Matomo-000?style=flat-square&labelColor=212121&logo=matomo&logoColor=3152a0&color=ccc)](https://matomo.org/)
+[![Nuxt](https://img.shields.io/badge/Nuxt-000?style=flat-square&labelColor=212121&logo=nuxt&logoColor=00DC82&color=ccc)](https://nuxt.com/)
+[![Astro](https://img.shields.io/badge/Astro-000?style=flat-square&labelColor=212121&logo=astro&logoColor=BC52EE&color=ccc)](https://astro.build/)
+[![Perplexity](https://img.shields.io/badge/Perplexity-000?style=flat-square&labelColor=212121&logo=perplexity&logoColor=1FB8CD&color=ccc)](https://www.perplexity.ai/)
 
 **Ew, please no**
 
-[![Wordpress](https://img.shields.io/badge/WordPress-000?style=flat-square&labelColor=212121&logo=wordpress&logoColor=21759b&color=fff)](https://wordpress.org/)
-[![Tailwind](https://img.shields.io/badge/Tailwind-000?style=flat-square&labelColor=212121&logo=tailwindcss&logoColor=06b6d4&color=fff)](https://tailwindcss.com/)
-[![Ember](https://img.shields.io/badge/Ember-000?style=flat-square&labelColor=212121&logo=emberdotjs&logoColor=e04e39&color=fff)](https://emberjs.com/)
+[![Wordpress](https://img.shields.io/badge/WordPress-000?style=flat-square&labelColor=212121&logo=wordpress&logoColor=21759b&color=ccc)](https://wordpress.org/)
+[![Tailwind](https://img.shields.io/badge/Tailwind-000?style=flat-square&labelColor=212121&logo=tailwindcss&logoColor=06b6d4&color=ccc)](https://tailwindcss.com/)
+[![Ember](https://img.shields.io/badge/Ember-000?style=flat-square&labelColor=212121&logo=emberdotjs&logoColor=e04e39&color=ccc)](https://emberjs.com/)
 
 <br />
 
