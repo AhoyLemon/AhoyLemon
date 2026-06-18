@@ -12,6 +12,10 @@ The actual rules live in [preferences/instructions/](../instructions/) — this 
 
 @../instructions/communication/plan.instructions.md
 
+## Writing
+
+@../instructions/writing/writing.instructions.md
+
 ## Process
 
 @../instructions/process/workflow.instructions.md

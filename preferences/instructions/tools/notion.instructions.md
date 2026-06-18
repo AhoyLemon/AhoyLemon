@@ -45,7 +45,7 @@ Always include `timeZone` for flights and other timezone-sensitive entries.
 
 ## Writing style
 
-No em dashes (—) or semicolons (;) in Notion page prose. Use a period, a comma, or restructure. (This applies to content you write into Notion, not to these instruction files.)
+For prose rules (grammar, voice, AI tells), see [writing.instructions.md](../writing/writing.instructions.md).
 
 ## Content style
 
