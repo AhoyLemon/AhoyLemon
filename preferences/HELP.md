@@ -29,11 +29,16 @@ The instruction files all live under `instructions/`, in subfolders (the index f
 
 - **`notion.instructions.md`** — Notion API/MCP usage, two-workspace routing, content style
 
+### `instructions/writing/` — writing as Lemon
+
+- **`writing.instructions.md`** — voice, grammar rules, AI tells to avoid, handling asks/requests
+
 ### Other
 
 - **`claude/PROFILE.md`** — bio and communication style. Loaded by Claude via the index.
 - **`claude/CLAUDE.md`** — index Claude Code loads; `@`-imports `PROFILE.md` and everything in `instructions/`.
 - **`Codex/AGENTS.md`** — the equivalent index for Codex.
+- **`cowork/context.md`** — paste-ready system prompt for Claude Cowork Projects (see "Setting up Cowork" below).
 - **`settings.json.snippet.md`** — VS Code settings snippet that registers the global instructions path.
 
 ---
@@ -88,7 +93,16 @@ New-Item -ItemType SymbolicLink -Path "$HOME\.github\instructions" -Target "$rep
 
 Alternatively, run PowerShell as Administrator and skip Developer Mode.
 
-### Step 3 — Claude Code
+### Step 3 — Claude Cowork
+
+Cowork is web-based and doesn't read local files — it has no equivalent of `CLAUDE.md`. Context reaches it through the account-level **Custom instructions**, which apply to every session.
+
+1. Open [claude.ai](https://claude.ai) and go to **Settings → General → Instructions for Claude**
+2. Paste the full contents of `preferences/cowork/context.md`
+
+When the underlying preferences change (voice rules, Notion setup, etc.), update `cowork/context.md` and re-paste.
+
+### Step 4 — Claude Code
 
 `~/.claude/CLAUDE.md` needs a single line that `@`-imports the repo's index file. The leading `@` is what makes Claude treat the line as an import (without it, Claude reads it as plain text and loads nothing). The target is the repo's `claude/CLAUDE.md`, which itself `@`-imports the rest.
 
@@ -116,7 +130,8 @@ Set-Content "$HOME\.claude\CLAUDE.md" "@$repo\preferences\claude\CLAUDE.md"
 1. Clone this repo
 2. Add the VS Code settings snippet (Step 1)
 3. Run the Copilot symlink command for your platform (Step 2)
-4. Run the Claude Code setup command for your platform (Step 3)
+4. Paste `cowork/context.md` into Settings → General → Instructions for Claude (Step 3)
+5. Run the Claude Code setup command for your platform (Step 4)
 
 ---
 

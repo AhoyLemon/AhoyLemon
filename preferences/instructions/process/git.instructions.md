@@ -14,6 +14,15 @@ Unless I say otherwise, treat GitHub as the source of truth for what work exists
 
 If unsure whether something needs a GitHub update, ask.
 
+## GitHub CLI hygiene
+
+When using `gh api`, be precise about shell quoting, HTTP method, and network access:
+
+- Quote array-style form fields like `'labels[]=post-workshop feedback'` so zsh does not treat `[]` as a glob.
+- When passing query parameters to a read endpoint, force GET with `--method GET`; otherwise `gh api -f ...` can become a write request.
+- Prefer GitHub connector tools for supported reads/writes. Use `gh api` for gaps, branch/PR discovery, and operations the connector does not expose cleanly.
+- In managed Codex environments, run real GitHub network operations through the approved/escalated `gh api` path instead of first trying them in a restricted sandbox.
+
 ## Work against an established issue
 
 Strongly prefer working against an open issue — almost every meaningful change should be tied to one. If a task has no issue, flag it and ask whether to file one before starting non-trivial work.
