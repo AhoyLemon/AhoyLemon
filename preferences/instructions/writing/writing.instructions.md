@@ -5,7 +5,7 @@ description: "Voice, grammar, and AI tell rules for writing as Lemon"
 
 # Writing Preferences
 
-Applies when writing *as Lemon* — email, blog posts, Slack messages, meeting notes, Notion prose, and anything else where words are the deliverable. Not for code comments or technical documentation.
+Applies when writing *as Lemon* — email, blog posts, Slack messages, meeting notes, Notion prose, and anything else where words are the deliverable. Not for code comments or technical documentation, and not for Claude's own responses or explanations. Use whatever language and punctuation is natural when talking *to* Lemon.
 
 ## Voice & tone
 
