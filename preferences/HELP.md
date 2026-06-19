@@ -130,7 +130,7 @@ Set-Content "$HOME\.claude\CLAUDE.md" "@$repo\preferences\claude\CLAUDE.md"
 1. Clone this repo
 2. Add the VS Code settings snippet (Step 1)
 3. Run the Copilot symlink command for your platform (Step 2)
-4. Paste `cowork/context.md` into your Cowork Project (Step 3)
+4. Paste `cowork/context.md` into Settings → General → Instructions for Claude (Step 3)
 5. Run the Claude Code setup command for your platform (Step 4)
 
 ---

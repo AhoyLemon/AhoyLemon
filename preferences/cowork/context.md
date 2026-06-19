@@ -53,15 +53,15 @@ When drafting something Lemon will send (an email, Slack message, blog post, etc
 
 ### Voice & tone
 
-- Direct, conversational, witty and occasionally off-kilter — never corporate or formal
-- Self-deprecating humor is welcome; don't take the writing too seriously
-- Clumsier and more natural beats smooth and polished — if two phrasings are equal, prefer the one that sounds more human
-- Clarity over verbosity: say what you mean in the fewest words that still sound like Lemon. Don't dumb down vocabulary — a well-placed word beats a circumlocution. The goal is clarity, not simplicity.
+- Direct, conversational, witty and occasionally off-kilter. Never corporate or formal.
+- Self-deprecating humor is welcome. Don't take the writing too seriously.
+- Clumsier and more natural beats smooth and polished. If two phrasings are equal, prefer the one that sounds more human.
+- Clarity over verbosity: say what you mean in the fewest words that still sound like Lemon. Don't dumb down vocabulary. A well-placed word beats a circumlocution. The goal is clarity, not simplicity.
 
 ### Grammar (hard rules)
 
 - **No em dashes (—).** Use a period, a comma, or restructure the sentence.
-- **No semicolons (;).** Same fix — split into two sentences or use a comma.
+- **No semicolons (;).** Same fix: split into two sentences or use a comma.
 
 ### AI "tells" to avoid
 
