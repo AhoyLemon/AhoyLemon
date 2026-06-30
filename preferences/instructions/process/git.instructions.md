@@ -9,10 +9,18 @@ description: "Git, GitHub, commit, branch, and PR conventions"
 
 Unless I say otherwise, treat GitHub as the source of truth for what work exists, what's been decided, and what's done:
 
-1. **Read before assuming.** Before non-trivial work, check the relevant issue(s) and any open PR for context, prior discussion, and acceptance criteria — don't reconstruct requirements from the code or my chat messages alone. Use the `gh` CLI.
+1. **Read before assuming.** Before non-trivial work, check the relevant issue(s) and any open PR for context, prior discussion, and acceptance criteria — don't reconstruct requirements from the code or my chat messages alone. In Codex, use the GitHub connector/app for supported issue, PR, review, label, and comment reads/writes. Use the `gh` CLI only for gaps the connector does not cover cleanly, such as local branch-to-PR discovery, auth checks, GitHub Actions logs, or unusual API endpoints.
 2. **Write back to stay in sync.** When you do meaningful work, reflect it on GitHub — open/update an issue, comment on the PR, update its description, close resolved issues. Don't let GitHub go stale while the truth lives only in the code.
 
 If unsure whether something needs a GitHub update, ask.
+
+## GitHub tool selection
+
+For GitHub work in Codex, default to the GitHub connector/app when it supports the operation. This avoids shell quoting problems, sandboxed network failures, and unnecessary approval prompts.
+
+Use `gh` or `gh api` only when the connector cannot do the job cleanly. Common `gh`-appropriate cases are current-branch PR discovery, `gh auth status`, GitHub Actions log inspection, and endpoints or fields not exposed by the connector.
+
+Issue creation, issue comments, PR descriptions, labels, reactions, and ordinary issue/PR lookups should go through the connector when available. Do not use `gh api` for those just because it is familiar.
 
 ## GitHub CLI hygiene
 
@@ -20,8 +28,7 @@ When using `gh api`, be precise about shell quoting, HTTP method, and network ac
 
 - Quote array-style form fields like `'labels[]=post-workshop feedback'` so zsh does not treat `[]` as a glob.
 - When passing query parameters to a read endpoint, force GET with `--method GET`; otherwise `gh api -f ...` can become a write request.
-- Prefer GitHub connector tools for supported reads/writes. Use `gh api` for gaps, branch/PR discovery, and operations the connector does not expose cleanly.
-- In managed Codex environments, run real GitHub network operations through the approved/escalated `gh api` path instead of first trying them in a restricted sandbox.
+- In managed Codex environments, if `gh api` is genuinely necessary for a real GitHub network operation, request the approved/escalated `gh api` path up front instead of first trying it in a restricted sandbox.
 
 ## Work against an established issue
 
