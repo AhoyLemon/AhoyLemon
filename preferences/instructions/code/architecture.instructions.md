@@ -41,4 +41,10 @@ Assume Prettier and ESLint are in use — don't produce code that fails either. 
 
 ## File length
 
-900 lines is a soft signal, not a hard limit — whether to actually split depends on whether the file grew coherently or tangled, and that's my call. But the **flagging is not optional**: if you write or touch a file that crosses ~900 lines, say so explicitly — in the PR description and to me in chat. Don't blast past 900 silently. Surfacing it is on you; deciding what to do about it is on me.
+- This guidance applies to files you touch in the current work; unchanged oversized files do not need to be surfaced.
+- Prefer files at 900 lines or fewer for ergonomics.
+- This is a convention, not a hard blocker.
+- If an edited non-CSS/SCSS file grows past 900 lines, try to split the finished work into self-contained, importable files.
+- If that split is not practical within scope, that's acceptable; list edited files over 900 lines in the PR description.
+- The 900-line guidance does not apply to CSS or SCSS files.
+- Across languages, files made primarily to be imported should be prefixed with `_` (for example: `_functions.ts`, `_modal.pug`, `_mixins.scss`).

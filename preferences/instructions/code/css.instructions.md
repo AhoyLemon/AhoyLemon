@@ -9,6 +9,8 @@ description: "SCSS/CSS conventions: variables, nesting, responsive, shame, file 
 
 Match the project's complexity. Plain CSS for simple projects with no existing Node dependency — don't add a build step just for styles. Reach for SCSS when complexity justifies it or it's already in the stack; as complexity grows, consider PostCSS and tree-shaking. Don't introduce a utility-class framework (e.g. Tailwind) unless it already dominates the project.
 
+No line-count threshold is enforced for CSS/SCSS files; organize them by coherent scope and import boundaries.
+
 ## Variables
 
 Prefer SCSS variables over bare CSS custom property references. If a custom property exists (e.g. `--color-primary`), assign it to a SCSS variable once — near the top of the file or in `abstracts/_variables.scss` — then use the variable everywhere:
@@ -51,7 +53,17 @@ Any rule targeting an ID (`#element`) or using `!important` must live in `_shame
 
 ## Interactive states
 
-Every interactable element — especially buttons, links, and form controls — must define both `:hover` and `:active`. Don't style a button without them.
+Every interactive element (buttons, links, inputs, form controls, etc.) must have a visible focus state.
+
+Default browser focus styles (for example, the blue outline) are acceptable if not stated or inferred otherwise.
+
+Prefer `:focus-visible` over `:focus` in most cases, especially for buttons.
+
+If you override default focus styles (for example, `outline: none`), you must provide an alternative visible focus style.
+
+In general, when writing `:hover`, prefer pairing it with `:focus-visible`.
+
+Define `:active` states for pressable controls (for example: buttons, links, and existing accessible custom controls), not every focusable input. This does not permit introducing new clickable `div`/non-semantic controls. Don't style a button or link with `:hover` only.
 
 ## File architecture
 
