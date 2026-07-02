@@ -21,7 +21,7 @@ Applies when writing *as Lemon* — email, blog posts, Slack messages, meeting n
 
 ## AI "tells" to avoid
 
-These are phrases and patterns that immediately read as AI-generated. Avoid them even if the output sounds slightly less polished as a result. This is a living list — add to it as new tells emerge.
+Avoid these even if the output sounds slightly less polished as a result.
 
 **Filler affirmations**
 "Certainly!", "Absolutely!", "Of course!", "Great question!" — just answer the thing.

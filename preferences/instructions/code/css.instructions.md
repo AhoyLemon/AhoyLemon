@@ -7,23 +7,11 @@ description: "SCSS/CSS conventions: variables, nesting, responsive, shame, file 
 
 ## Preprocessor
 
-Match the project's complexity. Plain CSS for simple projects with no existing Node dependency — don't add a build step just for styles. Reach for SCSS when complexity justifies it or it's already in the stack; as complexity grows, consider PostCSS and tree-shaking. Don't introduce a utility-class framework (e.g. Tailwind) unless it already dominates the project.
-
-No line-count threshold is enforced for CSS/SCSS files; organize them by coherent scope and import boundaries.
+Match the project's complexity. Plain CSS when the project would otherwise ship with no build step — don't add one just to get SCSS. Reach for SCSS when complexity justifies it or it's already in the stack; as complexity grows, consider PostCSS and tree-shaking. Don't introduce a utility-class framework (e.g. Tailwind) unless it already dominates the project.
 
 ## Variables
 
-Prefer SCSS variables over bare CSS custom property references. If a custom property exists (e.g. `--color-primary`), assign it to a SCSS variable once — near the top of the file or in `abstracts/_variables.scss` — then use the variable everywhere:
-
-```scss
-// Define once
-$color-primary: var(--color-primary);
-
-// Use everywhere
-color: $color-primary;
-```
-
-Don't repeat `var(--color-name)` inline throughout the codebase.
+Prefer SCSS variables over bare CSS custom property references. Assign each custom property to a SCSS variable once (`$color-primary: var(--color-primary);` — near the top of the file or in `abstracts/_variables.scss`), then use the variable everywhere instead of repeating `var(--color-name)` inline.
 
 ## Class naming
 
@@ -37,7 +25,7 @@ Prefer container queries (`@container`) over media queries for component-level r
 
 ## Source maps
 
-Include them in local/dev builds; strip them in production.
+Strip them in production builds (non-Vite pipelines like the sass CLI emit them by default).
 
 ## Sizing & spacing
 
@@ -67,35 +55,31 @@ Define `:active` states for pressable controls (for example: buttons, links, and
 
 ## File architecture
 
-The entry file (e.g. `site.scss`) should contain no CSS rules — only `@use` statements, in this order (omit sections that don't apply):
+The entry file (e.g. `site.scss`) contains no CSS rules — only `@use` statements. Follow [startHere's site.scss](https://github.com/AhoyLemon/startHere/blob/main/scss/site.scss) (structure adapted from [sass-guidelin.es](https://sass-guidelin.es/#architecture)), omitting sections that don't apply:
 
 ```scss
-// Abstracts (output no CSS on their own)
-@use 'abstracts/variables';
-@use 'abstracts/z-index';
-@use 'abstracts/mixins';
-@use 'abstracts/extends';
+// ABSTRACTS: variables and mixins (never add lines to production CSS)
+@use "abstracts/variables" as vars;
+@use "abstracts/z-index" as *;
+@use "abstracts/mixins" as mix;
+@use "abstracts/extends";
 
-// Libraries (third-party)
+// BASE: global site styles and typography
+@use "base/reset";
+@use "base/defaults";
 
-// Base
-@use 'base/reset';
-@use 'base/defaults';
+// LIBRARIES: third-party Scss
 
-// Layout
-@use 'layout/grid';
-@use 'layout/nav';
+// COMPONENTS: reusable rectangles — buttons, cards, callouts, toasts
 
-// Components
-@use 'components/button';
-@use 'components/card';
+// LAYOUT: grid system, topnav, footer
 
-// Sections (large page regions, heroes, etc.)
+// SECTIONS: stripes like a hero — a component, but bigger
 
-// Pages (template-specific overrides)
+// PAGES: specific page templates
 
-// Shame (known hacks and temporary fixes)
-@use 'todo/shame';
+// FINALLY, a place for things we still need to get to
+@use "todo/shame";
 ```
 
-Actual styles belong in the appropriate partial, not the entry file.
+All actual styles live in the partials, not the entry file.

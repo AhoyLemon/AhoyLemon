@@ -5,8 +5,6 @@ description: "How tasks should start and end"
 
 # Workflow Preferences
 
-How I expect tasks to start and end.
-
 ## Starting complex tasks
 
 Talk a non-trivial problem through before jumping to a solution — I like to think it through together first.

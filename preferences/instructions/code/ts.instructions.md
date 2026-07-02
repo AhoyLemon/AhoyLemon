@@ -7,12 +7,7 @@ description: "TypeScript file organisation, naming, and logging conventions"
 
 ## File organisation
 
-Split TypeScript into focused, single-purpose files rather than one large file (e.g. `src/ts/_gameLogic.ts`, `_computeds.ts`, `_api.ts`). Prefix files meant to be imported (not entry points) with an underscore: `_helpers.ts`, `_types.ts`.
-
-## Naming conventions
-
-- **Types and interfaces** — PascalCase: `export interface MerchItem`
-- **Functions** — camelCase: `export function calculateMerchPrice(item: MerchItem): number`
+Split TypeScript into focused, single-purpose files rather than one large file (e.g. `src/ts/_gameLogic.ts`, `_computeds.ts`, `_api.ts`). The underscore prefix follows the cross-language rule in [architecture.instructions.md](./architecture.instructions.md).
 
 ## Types
 

@@ -18,29 +18,23 @@ These apply to both Pug and HTML:
 
 - **Every image has alt text.** Never skip it. Decorative images pair an explicit empty `alt=""` with `role="presentation"` — a deliberate declaration that the image is decorative, not an omission.
 - **Every form field has a label.** Never skip it.
-- **Forms are real `<form>` elements.** Put the action on the form itself (its `submit` handler / `action`), not on a click handler on the button. The submit button just submits the form and lets that do its thing — this is what makes keyboard submission work correctly.
-- **ARIA only where there's no native substitute.** A core rule of ARIA is: don't reach for it if an element or attribute already conveys the meaning. Legitimate uses are things like `aria-controls`, `aria-describedby`, and `aria-live`, where there's no clean 1:1 native equivalent. Don't bolt on ARIA that just duplicates native semantics.
+- **Forms are real `<form>` elements.** Put the action on the form itself (its `submit` handler / `action`), never on a click handler on the button.
+- **ARIA only where there's no native substitute** — e.g. `aria-controls`, `aria-describedby`, `aria-live`. Never add ARIA that duplicates native semantics.
 
 ## Attributes
 
-- **Quote attribute values with double quotes:** `<div id="Foo">`, not `<div id='Foo'>`. Values may be complex strings where that reads naturally, e.g. `<div data-property="I do a thing">`.
 - **Casing:** class names are lowercase; IDs are PascalCase. e.g. `<nav id="MainNav" class="nav primary">`.
+- **In Pug too, quote attribute values with double quotes:** `div(data-property="I do a thing")`, not single quotes.
 
 ## Pug specifics
 
 - Let indentation carry the structural hierarchy — that's Pug's whole point.
 - Use Pug's concise syntax (`.class`, `#id`, attribute shorthands), but don't sacrifice readability for terseness.
 
-## HTML specifics
-
-- Well-formed and properly nested, with lowercase tag and attribute names.
-
 ## Pug vs HTML — when to reach for which
 
-It comes down to solo vs team:
-
-- **Solo work** (decks, personal projects) — Pug is the default. I'd happily work in it everywhere if it were only me.
-- **Team work** — if Pug isn't already in the project, stay in HTML. It isn't widely known, and I don't want to add cognitive load for teammates. If Pug is already established in the project, use it.
+- **Solo work** (decks, personal projects) — Pug is the default.
+- **Team work** — stay in HTML unless Pug is already established in the project.
 
 ## SVG
 
