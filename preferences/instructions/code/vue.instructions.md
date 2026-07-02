@@ -54,4 +54,4 @@ Component filenames are PascalCase; directories are lowercase. Keep `App.vue` an
 
 ## Router
 
-Use `<RouterView />` and `<RouterLink />` (PascalCase). Centralize route definitions — don't scatter them.
+Use `<RouterView />` and `<RouterLink />` (PascalCase), not kebab-case.

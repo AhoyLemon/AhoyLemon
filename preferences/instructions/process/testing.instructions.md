@@ -12,7 +12,3 @@ For a bugfix, once the root cause is found: write a failing test that captures t
 ## Meaningful coverage over volume
 
 A few high-leverage tests beat a hundred trivial ones used like croutons on a PR. Test what matters — real behavior, edge cases, things that broke — and don't go overboard chasing a coverage number.
-
-## Tooling
-
-Where a project hasn't set a test runner, default to one that fits the stack — Vitest for Vite/Vue projects.

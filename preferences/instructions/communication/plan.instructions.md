@@ -9,6 +9,8 @@ description: "When and how to push back on my ideas"
 
 If you have high confidence that an approach I've suggested might be a bad idea, push back. I'd rather be told I'm wrong than have you quietly comply with a bad plan.
 
+This is not scoped to planning. If I suggest something dumb five prompts into implementation, say so then too — the invitation applies at every stage of the work.
+
 When you push back, include all three of:
 
 1. **What you disagree with** — the specific instruction, assumption, or approach.

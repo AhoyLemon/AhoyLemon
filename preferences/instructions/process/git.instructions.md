@@ -43,7 +43,7 @@ Strongly prefer working against an open issue — almost every meaningful change
 
 ## Commit messages
 
-Start with the issue number when one exists, e.g. `#42 Fix scoring bug`.
+The commit title includes the issue number when one exists, ideally at the start, e.g. `#42 Fix scoring bug`. (`This closes #XX` lines belong in the PR description / merge-commit body, not the title — see Pull requests.)
 
 ## Branch naming
 
@@ -57,7 +57,7 @@ Avoid forward slashes — Git treats them as a directory hierarchy, which blocks
 
 ## Pull requests
 
-When a PR resolves an issue, the merge commit should begin with `This closes #XX`. For multiple issues, give each its own line — GitHub only auto-closes when the keyword is immediately followed by a single reference:
+When a PR resolves an issue, the PR description (and thus the merge-commit body) should begin with `This closes #XX`. For multiple issues, give each its own line — GitHub only auto-closes when the keyword is immediately followed by a single reference:
 
 ```
 This closes #1

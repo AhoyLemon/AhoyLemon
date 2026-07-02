@@ -12,8 +12,8 @@ TypeScript over JavaScript. Vite as the build tool. bun as the package manager. 
 Framework choice, in order of preference:
 
 - **Vue first** when a framework is needed and none is already in use.
-- **Svelte** — a liked lightweight alternative, but I'm much less practiced in it than Vue. I like it and am happy to learn, so explain Svelte choices rather than assuming I know them.
-- **React only when the project already uses it.** I'd never choose React, but it's everywhere and refactoring an existing React app isn't worth it. When working in React, follow the widely-adopted convention, with a soft preference for Vue-like structure where reasonable. My React opinions are less seasoned, so prefer prevailing convention over invention.
+- **Svelte** — a liked lightweight alternative. Explain Svelte choices rather than assuming I know them.
+- **React only when the project already uses it.** Follow prevailing convention over invention, with a soft preference for Vue-like structure where reasonable.
 
 ## Architecture
 
