@@ -68,7 +68,7 @@ The entry file (e.g. `site.scss`) contains no CSS rules — only `@use` statemen
 @use "base/reset";
 @use "base/defaults";
 
-// LIBRARIES: third-party Scss
+// LIBRARIES: third-party SCSS
 
 // COMPONENTS: reusable rectangles — buttons, cards, callouts, toasts
 

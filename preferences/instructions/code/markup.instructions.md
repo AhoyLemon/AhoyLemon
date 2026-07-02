@@ -24,7 +24,7 @@ These apply to both Pug and HTML:
 ## Attributes
 
 - **Casing:** class names are lowercase; IDs are PascalCase. e.g. `<nav id="MainNav" class="nav primary">`.
-- **In Pug too, quote attribute values with double quotes:** `div(data-property="I do a thing")`, not single quotes.
+- **Quote attribute values with double quotes** — in HTML and in Pug alike: `div(data-property="I do a thing")`, not single quotes.
 
 ## Pug specifics
 
