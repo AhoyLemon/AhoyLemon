@@ -14,6 +14,7 @@ The instruction files all live under `instructions/`, in subfolders (the index f
 - **`markup.instructions.md`** — semantic HTML, Pug, and SVG
 - **`vue.instructions.md`** — Vue
 - **`terminal.instructions.md`** — bash/zsh/Node CLI scripts
+- **`markdown.instructions.md`** — no artificial line-wrapping in authored Markdown prose
 
 ### `instructions/communication/` — how the AI should talk to me
 

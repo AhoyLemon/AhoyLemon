@@ -30,3 +30,4 @@ The actual rules live in `preferences/instructions/`; this file is the Codex ind
 @../instructions/code/markup.instructions.md
 @../instructions/code/vue.instructions.md
 @../instructions/code/terminal.instructions.md
+@../instructions/code/markdown.instructions.md

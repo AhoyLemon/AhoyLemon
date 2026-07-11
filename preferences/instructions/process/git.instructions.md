@@ -69,6 +69,10 @@ Do **not** combine them as `This closes #1, #2, #3` — GitHub renders the links
 
 PR descriptions should explain WHY, not just WHAT. The diff shows what; the description carries what the diff can't — motivation, alternatives considered, links to the issue.
 
+## Markdown formatting
+
+PR/issue bodies and commit-message bodies follow [markdown.instructions.md](../code/markdown.instructions.md).
+
 ## Code comments vs. PR descriptions
 
 Time-bound context ("added for the X flow", "fixes the bug from #123") belongs in the PR/issue, not in code comments — it rots into noise as the code moves on. Put it where it lives forever.
