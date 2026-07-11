@@ -71,7 +71,7 @@ PR descriptions should explain WHY, not just WHAT. The diff shows what; the desc
 
 ## Markdown formatting
 
-PR/issue bodies and commit-message bodies follow [markdown.instructions.md](../code/markdown.instructions.md)'s no-artificial-line-wrapping rule. This is about line breaks only — it doesn't pull in `writing.instructions.md`'s voice/grammar rules, which are scoped to writing as Lemon, not PRs/issues/commits.
+PR/issue bodies and commit-message bodies follow [markdown.instructions.md](../code/markdown.instructions.md).
 
 ## Code comments vs. PR descriptions
 
