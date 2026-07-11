@@ -34,3 +34,4 @@ The actual rules live in [preferences/instructions/](../instructions/) — this 
 @../instructions/code/markup.instructions.md
 @../instructions/code/vue.instructions.md
 @../instructions/code/terminal.instructions.md
+@../instructions/code/markdown.instructions.md
