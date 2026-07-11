@@ -5,10 +5,6 @@ description: "No artificial line-wrapping in authored Markdown prose"
 
 # Markdown Preferences
 
-## No artificial line lengths
+Every paragraph of prose is one line. Never insert line breaks to hit a column width — GitHub renders soft-wrap anyway. Line breaks are for structure only: lists, table rows, code blocks, headings, and intentional `<br>`.
 
-Every paragraph of prose is a single line — never insert manual line breaks to hit a column width. GitHub and other renderers soft-wrap; hard breaks at a fixed column buy nothing and just add diff churn and edit friction.
-
-Line breaks are reserved for structure: list items, table rows, code blocks, headings, and intentional `<br>`.
-
-Applies to all authored Markdown — `.md` files, `docs/`, GitHub issue and PR bodies — including commit-message bodies. No exception for the git-tradition ~72-column wrap: fewer carve-outs means the rule gets followed more reliably, and GitHub soft-wraps commit bodies anyway.
+Applies to all authored Markdown: `.md` files, docs, GitHub issue/PR bodies, and commit messages. No exception for the git ~72-column tradition — GitHub soft-wraps those anyway.
