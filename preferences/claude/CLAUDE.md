@@ -26,6 +26,14 @@ The actual rules live in [preferences/instructions/](../instructions/) — this 
 
 @../instructions/tools/notion.instructions.md
 
+## Browser automation
+
+Don't reach for Playwright, Puppeteer, Selenium, or similar headless-browser tooling by default to verify UI/frontend work. Get the change running (dev server, build, etc.) and hand over the URL instead — 95% of the time it's faster for me to glance at a page myself than for you to drive a headless browser through it.
+
+If your instinct is "I'll launch Playwright to take a screenshot," don't — tell me what you want a screenshot of and I'll look or grab it.
+
+If automated browser testing genuinely seems warranted (e.g. a repeatable regression test, something I can't easily eyeball), explain why and pause for my go-ahead before launching it.
+
 ## Code
 
 @../instructions/code/architecture.instructions.md
