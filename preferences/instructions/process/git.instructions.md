@@ -16,10 +16,10 @@ If unsure whether something needs a GitHub update, ask.
 
 ## GitHub tool selection
 
-Use the GitHub connector/app or the `gh` CLI according to the operation; neither is reserved for, or prohibited to, a particular agent.
+Use an available GitHub connector/app or the `gh` CLI according to the operation; neither is reserved for, or prohibited to, a particular agent.
 
 - Prefer one integration per operation. Do not automatically retry a failed operation through the other path without identifying the failure's cause.
-- The connector is well suited to structured repository, issue, PR, comment, label, and reaction work. `gh` is well suited to local-branch context, authentication checks, GitHub Actions logs, and API operations the connector does not expose cleanly.
+- When available, the connector is well suited to structured repository, issue, PR, comment, label, and reaction work. `gh` is well suited to local-branch context, authentication checks, GitHub Actions logs, and API operations the connector does not expose cleanly.
 - When using `gh` or `gh api`, be precise about shell quoting and HTTP method: quote array-style form fields such as `'labels[]=post-workshop feedback'`, and force `GET` when passing query parameters to a read endpoint.
 - In Codex's restricted terminal, request elevated network access for any `gh` command that needs GitHub rather than first running an expected-to-fail sandboxed probe. This is an execution constraint, not a tool-selection rule.
 
