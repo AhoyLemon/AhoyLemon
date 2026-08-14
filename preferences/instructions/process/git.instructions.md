@@ -16,26 +16,12 @@ If unsure whether something needs a GitHub update, ask.
 
 ## GitHub tool selection
 
-How to access GitHub depends on which agent/model is running:
+Use the GitHub connector/app or the `gh` CLI according to the operation; neither is reserved for, or prohibited to, a particular agent.
 
-### Claude
-Use the `gh` CLI as the primary tool for GitHub operations. It's reliable and avoids the overhead of custom connectors.
-
-When using `gh` or `gh api`, be precise about shell quoting, HTTP method, and network access:
-
-- Quote array-style form fields like `'labels[]=post-workshop feedback'` so zsh does not treat `[]` as a glob.
-- When passing query parameters to a read endpoint, force GET with `--method GET`; otherwise `gh api -f ...` can become a write request.
-- For complex queries or unusual endpoints, `gh api` is the right tool — no need to wait for a custom integration.
-
-### Codex
-
-Default to the GitHub connector/app when it supports the operation. This avoids shell quoting problems, sandboxed network failures, and unnecessary approval prompts.
-
-Use `gh` or `gh api` only when the connector cannot do the job cleanly. Common `gh`-appropriate cases are current-branch PR discovery, `gh auth status`, GitHub Actions log inspection, and endpoints or fields not exposed by the connector.
-
-Issue creation, issue comments, PR descriptions, labels, reactions, and ordinary issue/PR lookups should go through the connector when available. 
-
-If `gh api` is genuinely necessary for a real GitHub network operation in Codex, request the approved/escalated `gh api` path up front instead of first trying it in a restricted sandbox.
+- Prefer one integration per operation. Do not automatically retry a failed operation through the other path without identifying the failure's cause.
+- The connector is well suited to structured repository, issue, PR, comment, label, and reaction work. `gh` is well suited to local-branch context, authentication checks, GitHub Actions logs, and API operations the connector does not expose cleanly.
+- When using `gh` or `gh api`, be precise about shell quoting and HTTP method: quote array-style form fields such as `'labels[]=post-workshop feedback'`, and force `GET` when passing query parameters to a read endpoint.
+- In Codex's restricted terminal, request elevated network access for any `gh` command that needs GitHub rather than first running an expected-to-fail sandboxed probe. This is an execution constraint, not a tool-selection rule.
 
 ## Work against an established issue
 
