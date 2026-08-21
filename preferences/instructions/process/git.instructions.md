@@ -41,6 +41,12 @@ Format: `type_NN--brief-description`, e.g. `issue_31--fix-scoring-bug`.
 
 Avoid forward slashes — Git treats them as a directory hierarchy, which blocks a bare `issue` branch alongside `issue/*` branches and breaks some CI tooling and shell completions.
 
+## Worktrees
+
+Default to a branch cut from `main` (named per Branch naming above), worked in the main checkout — not a worktree. Worktrees make changes harder to verify personally, so they are the exception, not the default.
+
+Worktrees are fine when genuinely warranted — parallel workflows where multiple agents mutate files at the same time, or work that must not disturb the current checkout. If you believe one is warranted, say why and ask permission before creating it.
+
 ## Pull requests
 
 When a PR resolves an issue, the PR description (and thus the merge-commit body) should begin with `This closes #XX`. For multiple issues, give each its own line — GitHub only auto-closes when the keyword is immediately followed by a single reference:
