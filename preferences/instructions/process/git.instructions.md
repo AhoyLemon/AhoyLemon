@@ -47,6 +47,8 @@ Default to a branch cut from `main` (named per Branch naming above), worked in t
 
 Worktrees are fine when genuinely warranted — parallel workflows where multiple agents mutate files at the same time, or work that must not disturb the current checkout. If you believe one is warranted, say why and ask permission before creating it.
 
+This is enforced technically, not just by instruction: `~/.claude/settings.json` gates the `EnterWorktree` tool with `permissions.ask` plus a `PreToolUse` hook forcing an approval prompt, globally across repos. That also covers the case where a background job's harness forces worktree isolation before it can edit files — the forced call to `EnterWorktree` still has to clear the same approval gate, so it can't happen silently. Don't treat harness-enforced isolation as an exception to asking first; if you hit it, the gate will stop you and ask on your behalf.
+
 ## Pull requests
 
 When a PR resolves an issue, the PR description (and thus the merge-commit body) should begin with `This closes #XX`. For multiple issues, give each its own line — GitHub only auto-closes when the keyword is immediately followed by a single reference:
