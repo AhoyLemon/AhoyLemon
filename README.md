@@ -35,13 +35,6 @@
 
 <br />
 
-
-
-
-
-<a href="https://github.com/AhoyLemon">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AhoyLemon&theme=github-compact&hide_border=true&bg_color=0d1117&color=e4e72c&line=e4e72c&point=ffffff&area=true" alt="Contribution activity" />
-</a>
 <a href="https://github.com/AhoyLemon">
   <img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=AhoyLemon&hide_border=true&background=0d1117&ring=e4e72c&fire=e4e72c&currStreakLabel=e4e72c&sideLabels=c9d1d9&dates=c9d1d9&stroke=0d1117&currStreakNum=ffffff&sideNums=ffffff&dates=8b949e" alt="Lemon's streak" />
 </a>
