@@ -17,7 +17,7 @@
 [![Profile Views](https://komarev.com/ghpvc/?username=ahoylemon&style=for-the-badge&labelColor=212121)](https://github.com/antonkomarev/github-profile-views-counter)
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ff69b4?style=for-the-badge&logo=github-sponsors&labelColor=212121)](https://github.com/sponsors/ahoylemon)
 
-## &nbsp;&nbsp;Find me elsewhere
+## Find me elsewhere
 
 [![website](https://img.shields.io/badge/website-ahoylemon.xyz-212121?style=for-the-badge&labelColor=e4e72c)](https://ahoylemon.xyz)
 [![Sessionize](https://img.shields.io/badge/-@lemon-212121?style=for-the-badge&logo=sessionize&logoColor=fff&labelColor=009688)](https://sessionize.com/lemon)
@@ -26,7 +26,7 @@
 
 ---
 
-## &nbsp;&nbsp;The numbers <sub><sup>&mdash; auto-refreshed daily from my [stats pipeline](https://github.com/AhoyLemon/xyz/tree/main/stats)</sup></sub>
+## The numbers <sub><sup>&mdash; auto-refreshed daily from my [stats pipeline](https://github.com/AhoyLemon/xyz/tree/main/stats)</sup></sub>
 
 [![Repositories](https://raw.githubusercontent.com/AhoyLemon/xyz/main/stats/badges/repos.svg)](https://github.com/AhoyLemon?tab=repositories)
 [![Commits](https://raw.githubusercontent.com/AhoyLemon/xyz/main/stats/badges/commits.svg)](https://github.com/search?q=author%3Aahoylemon&type=commits)
@@ -41,9 +41,9 @@
 
 ---
 
-## &nbsp;&nbsp;Tech I reach for
+## Tech I reach for
 
-**Daily drivers**
+### Daily drivers
 
 [![Vue](https://img.shields.io/badge/Vue-000?style=flat-square&labelColor=212121&logo=vue.js&logoColor=42b883&color=eee)](https://vuejs.org/)
 [![Vite](https://img.shields.io/badge/Vite-000?style=flat-square&labelColor=212121&logo=vite&logoColor=646CFF&color=eee)](https://vitejs.dev/)
@@ -55,7 +55,7 @@
 [![Storybook](https://img.shields.io/badge/Storybook-000?style=flat-square&labelColor=212121&logo=storybook&logoColor=ff4785&color=eee)](https://storybook.js.org/)
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=flat-square&labelColor=212121&logo=github&logoColor=fff&color=eee)](https://github.com/)
 
-**Friendly with**
+### Friendly with
 
 [![Svelte](https://img.shields.io/badge/Svelte-000?style=flat-square&labelColor=212121&logo=svelte&logoColor=ff3e00&color=eee)](https://svelte.dev/)
 [![React](https://img.shields.io/badge/React-000?style=flat-square&labelColor=212121&logo=react&logoColor=61dafb&color=eee)](https://react.dev/)
@@ -69,7 +69,7 @@
 [![Astro](https://img.shields.io/badge/Astro-000?style=flat-square&labelColor=212121&logo=astro&logoColor=BC52EE&color=eee)](https://astro.build/)
 [![Perplexity](https://img.shields.io/badge/Perplexity-000?style=flat-square&labelColor=212121&logo=perplexity&logoColor=1FB8CD&color=eee)](https://www.perplexity.ai/)
 
-**Ew, please no**
+### Ew, please no
 
 [![Wordpress](https://img.shields.io/badge/WordPress-000?style=flat-square&labelColor=212121&logo=wordpress&logoColor=21759b&color=eee)](https://wordpress.org/)
 [![Tailwind](https://img.shields.io/badge/Tailwind-000?style=flat-square&labelColor=212121&logo=tailwindcss&logoColor=06b6d4&color=eee)](https://tailwindcss.com/)
