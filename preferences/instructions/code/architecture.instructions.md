@@ -39,6 +39,12 @@ See [terminal.instructions.md](./terminal.instructions.md) for how to write CLI 
 
 Assume Prettier and ESLint are in use — don't produce code that fails either. Validate TypeScript; don't suppress type errors or reach for `any`.
 
+## Comments are one line
+
+One comment, one unbroken line, in every language: TypeScript, JavaScript, Pug, Sass, CSS, shell, anything. Never hard-wrap a comment to a column width; the editor's soft wrap handles display. This is the code-side twin of the Markdown rule in [markdown.instructions.md](./markdown.instructions.md).
+
+Line breaks inside a comment are for structure only: list items, aligned `key: value` lines, commented-out code, a heading over its underline, and a blank comment line between two separate comments.
+
 ## File length
 
 - This guidance applies to files you touch in the current work; unchanged oversized files do not need to be surfaced.

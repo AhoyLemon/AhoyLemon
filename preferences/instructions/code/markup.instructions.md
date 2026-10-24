@@ -5,7 +5,7 @@ description: "Semantic HTML, Pug, and SVG conventions"
 
 # Markup (HTML & Pug) Preferences
 
-**WCAG AA is the baseline.** Accessibility is baked in, not a separate pass bolted on at the end — if we're writing semantic markup, we're writing accessible markup. The single exception: code explicitly declared a **prototype** may break any rule here (including the clickable-`<div>` rule). Outside of a stated prototype, treat everything below as firm.
+**WCAG AA is the baseline.** Accessibility is baked in, not a separate pass bolted on at the end — if we're writing semantic markup, we're writing accessible markup. Two exceptions: code explicitly declared a **prototype** may break any rule here (including the clickable-`<div>` rule), and **talk decks** (Lemon's reveal.js talks) aren't held to WCAG at all — a deck only has to be legible on screen from the back of the room, even when the talk's subject is accessibility. Outside those two, treat everything below as firm.
 
 ## Semantic markup principles
 
